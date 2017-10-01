@@ -1,0 +1,532 @@
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script);/*=============FONTS=========*/
+
+/*============COLORS============*/
+
+/*===========General================*/
+
+body {
+  font-family: "Raleway";
+  font-size: 1em;
+  color: black;
+}
+
+* {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+h1,
+h2 {
+  font-family: "Dancing Script", cursive;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+span {
+  display: block;
+}
+
+*:visited {
+  color: #656D6D;
+}
+
+.wrapper {
+  background-color: #656D6D;
+  position: relative;
+}
+
+.wrapper-black {
+  background-color: black;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+section {
+  text-align: center;
+  background-color: #EDEDEE;
+}
+
+/*=======================================================*/
+
+.container-fluid {
+  max-width: 1920px;
+}
+
+.container-fluid img {
+  width: 1920px;
+  max-width: 100%;
+  background-color: black;
+  -webkit-filter: sepia() saturate(2) hue-rotate(295deg);
+          filter: sepia() saturate(2) hue-rotate(295deg);
+  opacity: 0.3;
+}
+
+.container-fluid .title {
+  position: absolute;
+  left: 34%;
+  top: 22%;
+}
+
+.container-fluid h1 {
+  padding: 1em;
+  color: white;
+  -webkit-filter: drop-shadow(1px 1px 10px white);
+          filter: drop-shadow(1px 1px 10px white);
+  font-size: 3em;
+}
+
+.container-fluid h1 span {
+  font-size: 2em;
+}
+
+.container-fluid p {
+  margin-top: 0.5em;
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+
+.container-fluid p a {
+  padding: 1em;
+  background-color: #FFA7B3;
+  text-decoration: none;
+  color: #656D6D;
+}
+
+.container-fluid p a:hover {
+  color: white;
+  background-color: #8504B2;
+}
+
+.container {
+  max-width: 1600px;
+  margin: auto;
+}
+
+/*=====PRE-HEADER===&&==Header================*/
+
+.pre-header-advertisement {
+  padding: 1em;
+  background-color: black;
+}
+
+.pre-header-advertisement .float-right {
+  float: right;
+  margin-right: 3%;
+  width: 10%;
+  margin-top: 0.3%;
+}
+
+.pre-header-advertisement p {
+  display: inline;
+  font-size: 1.2em;
+  font-weight: 800;
+  color: #656D6D;
+}
+
+.pre-header-advertisement .pre-nav {
+  margin-left: 3%;
+}
+
+.pre-header-advertisement .pre-nav a {
+  color: #656D6D;
+  text-decoration: none;
+}
+
+.pre-header-advertisement .pre-nav .icon {
+  padding: 0.5%;
+  background-color: #656D6D;
+  display: inline-block;
+  width: 50px;
+}
+
+.pre-header-advertisement .pre-nav i.mail-icon {
+  -webkit-mask: url("/icons/SVG/mail.svg") no-repeat 50%;
+          mask: url("/icons/SVG/mail.svg") no-repeat 50%;
+}
+
+.pre-header-advertisement .pre-nav i.phone-icon {
+  -webkit-mask: url("/icons/SVG/phone.svg") no-repeat 50%;
+          mask: url("/icons/SVG/phone.svg") no-repeat 50%;
+}
+
+.pre-header-advertisement .pre-nav i.facebook-icon {
+  -webkit-mask: url("/icons/SVG/facebook-logo.svg") no-repeat 50%;
+          mask: url("/icons/SVG/facebook-logo.svg") no-repeat 50%;
+}
+
+header {
+  padding: 2em 0 2em;
+}
+
+.logo {
+  max-width: 150px;
+  padding: 0.2em;
+}
+
+nav {
+  padding: 0.5em;
+}
+
+nav li a {
+  color: #8504B2;
+  text-decoration: none;
+  font-size: 3em;
+  font-family: "Dancing Script", cursive;
+  padding: 0.5em;
+}
+
+nav li a:hover {
+  color: white;
+  background-color: black;
+}
+
+nav li a.logo:hover {
+  cursor: default;
+  background-color: white;
+}
+
+/*=================Section presentation====================*/
+
+.presentation {
+  background-color: #EDEDEE;
+  padding-top: 2%;
+}
+
+.presentation h1 .title {
+  width: 20%;
+  margin: auto;
+  padding-top: 1%;
+  color: #8504B2;
+  padding-bottom: 3%;
+  border-bottom: solid 1px black;
+  -webkit-filter: drop-shadow(1px 1px 10px #8504B2);
+          filter: drop-shadow(1px 1px 10px #8504B2);
+}
+
+.presentation p {
+  font-size: 1.5em;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 4%;
+  max-width: 30%;
+}
+
+.presentation li {
+  width: 33%;
+}
+
+.presentation li .card-title {
+  -webkit-filter: drop-shadow(1px 1px 10px #ffffcb);
+          filter: drop-shadow(1px 1px 10px #ffffcb);
+  padding: 1em;
+  font-size: 2em;
+}
+
+.presentation li img {
+  background: white;
+  padding: 0.5em;
+  width: 450px;
+  max-width: 100%;
+}
+
+.presentation li .card-footer {
+  background-color: white;
+  width: 350px;
+  max-width: 100%;
+  margin: auto;
+  position: relative;
+  bottom: 100px;
+}
+
+.presentation li .card-footer p {
+  padding: 1em;
+  font-family: "Dancing Script", cursive;
+  color: #8504B2;
+  max-width: 100%;
+}
+
+.presentation li .card-footer span {
+  font-family: "Raleway";
+}
+
+.presentation li .card-footer a {
+  text-decoration: none;
+}
+
+.presentation li .card-footer .call-to-action {
+  display: block;
+  font-size: 1.5em;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  background-color: #FFA7B3;
+  font-family: "Raleway";
+  text-transform: uppercase;
+}
+
+.presentation li .card-footer .call-to-action:hover {
+  background-color: #8504B2;
+}
+
+/*============Offres et Tarifs==================*/
+
+.offer-and-pricing {
+  padding-bottom: 5%;
+  background: url("/img/hair.jpg") 0/cover fixed;
+}
+
+.offer-and-pricing .container-large {
+  max-width: 1920px;
+}
+
+.offer-and-pricing h1 {
+  padding: 1em;
+  color: #FFA7B3;
+}
+
+.offer-and-pricing h1 span {
+  font-size: 1.5em;
+  color: #ffc;
+  display: block;
+}
+
+.offer-and-pricing .promo {
+  font-size: 3em;
+}
+
+.offer-and-pricing .promo span {
+  font-family: "Dancing Script", cursive;
+  display: block;
+}
+
+.offer-and-pricing p {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 10%;
+}
+
+.offer-and-pricing .left-box {
+  float: left;
+  margin-left: 2%;
+  max-width: 23%;
+}
+
+.offer-and-pricing .right-box {
+  padding-top: 3%;
+}
+
+.offer-and-pricing .right-box img {
+  width: 450px;
+  max-width: 100%;
+  margin-bottom: 10%;
+}
+
+.offer-and-pricing .right-box h2 {
+  padding: 2em;
+}
+
+.offer-and-pricing li {
+  width: 30%;
+}
+
+.offer-and-pricing .card-footer {
+  background-color: white;
+  margin: auto;
+  position: relative;
+  bottom: 100px;
+}
+
+.offer-and-pricing .card-footer p {
+  padding: 1em;
+  font-family: "Dancing Script", cursive;
+  color: #8504B2;
+  max-width: 100%;
+}
+
+.offer-and-pricing .card-footer span {
+  display: block;
+  font-family: "Raleway";
+}
+
+.offer-and-pricing .card-footer a {
+  text-decoration: none;
+}
+
+.offer-and-pricing .card-footer .call-to-action {
+  display: block;
+  font-size: 1.5em;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  background-color: #FFA7B3;
+  font-family: "Raleway";
+  text-transform: uppercase;
+}
+
+.offer-and-pricing .card-footer .call-to-action:hover {
+  background-color: #8504B2;
+}
+
+/*=============THE GIRL========================*/
+
+.thegirl h1 {
+  color: #FFA7B3;
+  padding: 3%;
+}
+
+.thegirl ul .big-horizontal-card {
+  width: 90%;
+  display: inline;
+}
+
+.thegirl ul li {
+  float: left;
+  width: 30%;
+}
+
+.thegirl ul li p {
+  font-size: 1.5em;
+  color: #656D6D;
+  margin-left: 30%;
+  padding: 0.5em;
+}
+
+.thegirl ul .left {
+  float: left;
+  width: 800px;
+  position: relative;
+  z-index: 1;
+}
+
+.thegirl ul img {
+  width: 600px;
+  max-width: 100%;
+}
+
+/*=======================SECTION BRANDS==========================*/
+
+.brand h1 {
+  padding-top: 1em;
+  margin-bottom: 1%;
+  text-align: center;
+  color: white;
+}
+
+.brand .brands {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: white;
+  font-size: 2em;
+  padding: 2em;
+}
+
+/*==================SECTION WORKERS================================*/
+
+.workers h1 {
+  padding: 1em;
+}
+
+.workers h1 span {
+  width: 20%;
+  margin: auto;
+  padding-bottom: 3%;
+  -webkit-filter: drop-shadow(1px 1px 10px #8504B2);
+          filter: drop-shadow(1px 1px 10px #8504B2);
+  color: #FFA7B3;
+}
+
+.workers p {
+  font-size: 1.5em;
+  margin: auto;
+  margin-bottom: 4%;
+  max-width: 30%;
+}
+
+.workers .portrait img {
+  border-radius: 50%;
+}
+
+/*================BLOG CARDS============================*/
+
+.blog h1 {
+  padding: 1em;
+}
+
+.blog h1 span {
+  width: 50%;
+  margin: auto;
+  padding-bottom: 3%;
+  -webkit-filter: drop-shadow(1px 1px 10px #8504B2);
+          filter: drop-shadow(1px 1px 10px #8504B2);
+  color: #FFA7B3;
+}
+
+.blog img {
+  width: 569px;
+}
+
+.blog .card-footer h2 {
+  color: #8504B2;
+  padding: 1em;
+}
+
+.blog .card-footer p {
+  color: #FFA7B3;
+}
+
+/*===========Pricing===========================*/
+
+.pricing h1 {
+  padding: 1em;
+}
+
+.pricing h1 span {
+  width: 50%;
+  margin: auto;
+  padding-bottom: 3%;
+  -webkit-filter: drop-shadow(1px 1px 10px #8504B2);
+          filter: drop-shadow(1px 1px 10px #8504B2);
+  color: #FFA7B3;
+}
+
+.pricing img {
+  max-width: 100%;
+  float: right;
+}
+
+.pricing table {
+  float: left;
+  display: inline-block;
+  border-collapse: collapse;
+  margin-left: 2em;
+}
+
+.pricing td {
+  text-align: left;
+  padding: 0.5em;
+  font-size: 2em;
+  padding: 1em;
+  border-bottom: 1px solid #D5D5D5;
+}
+
+.pricing td:first-of-type {
+  color: #FFA7B3;
+  font-family: "Dancing Script", cursive;
+}
+
