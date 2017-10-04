@@ -14,13 +14,16 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
+Route::get('/products', 'ShopController@index');
+Route::get('/product/{slug}', 'ShopController@show');
+Route::post('/add-product', 'ProductController@store');
 Route::get('/admin', 'AdminController@index');
+Route::get('/admin/messages', 'MessagesController@index');
 
 Route::get('/messages', 'MessagesController@index');
 Route::post('/messages', 'MessagesController@store');
 
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();

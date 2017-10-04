@@ -30624,6 +30624,12 @@ var routes = [{
 }, {
     path: '/contact',
     component: __webpack_require__(162)
+}, {
+    path: '/shop',
+    component: __webpack_require__(208)
+}, {
+    path: '/product/:slug',
+    component: __webpack_require__(211)
 }];
 
 /* harmony default export */ __webpack_exports__["a"] = (new __WEBPACK_IMPORTED_MODULE_0_vue_router__["a" /* default */]({
@@ -31725,7 +31731,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   return _c('section', {
     staticClass: "presentation"
   }, [_c('div', {
-    staticClass: "container"
+    staticClass: "container-large"
   }, [_c('h1', [_vm._v("Ce que nous faisons a "), _c('span', {
     staticClass: "title"
   }, [_vm._v("Nom du magasin")])]), _vm._v(" "), _c('p', [_vm._v("\n            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum facere, ipsum. Tenetur adipisci veritatis qui quam quaerat natus, fugit aspernatur mollitia in distinctio iure aut rem et temporibus, velit cupiditate!\n        ")]), _vm._v(" "), _c('ul', {
@@ -32960,6 +32966,257 @@ if (false) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 205 */,
+/* 206 */,
+/* 207 */,
+/* 208 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var Component = __webpack_require__(1)(
+  /* script */
+  __webpack_require__(209),
+  /* template */
+  __webpack_require__(210),
+  /* styles */
+  null,
+  /* scopeId */
+  null,
+  /* moduleIdentifier (server only) */
+  null
+)
+Component.options.__file = "/home/laurent/public_html/NailSalon/vueApp/resources/assets/js/views/Shop.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] Shop.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-7e54af1e", Component.options)
+  } else {
+    hotAPI.reload("data-v-7e54af1e", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 209 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {
+            products: []
+        };
+    },
+    mounted: function mounted() {
+        var _this = this;
+
+        axios.get('/products').then(function (response) {
+            return _this.products = response.data;
+        });
+    }
+});
+
+/***/ }),
+/* 210 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('section', {
+    staticClass: "blog offer-and-pricing"
+  }, [_c('h1', [_vm._v("Shop with us !")]), _vm._v(" "), _c('div', {
+    staticClass: "container-large"
+  }, [_c('ul', {
+    staticClass: "flex cards"
+  }, _vm._l((_vm.products), function(product) {
+    return _c('li', [_c('div', {
+      staticClass: "card-body",
+      attrs: {
+        "data-aos": "slide-down"
+      }
+    }, [_c('img', {
+      attrs: {
+        "src": '/img/' + product.image,
+        "alt": ""
+      }
+    })]), _vm._v(" "), _c('div', {
+      staticClass: "card-footer"
+    }, [_c('h2', [_vm._v(_vm._s(product.name) + " "), _c('span', [_vm._v("$" + _vm._s(product.price / 100))])]), _vm._v(" "), _c('p', [_vm._v(_vm._s(product.description))]), _vm._v(" "), _c('router-link', {
+      attrs: {
+        "to": '/product/' + product.slug,
+        "exact": ""
+      }
+    }, [_vm._v("toto")])], 1)])
+  }))])])
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-7e54af1e", module.exports)
+  }
+}
+
+/***/ }),
+/* 211 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var Component = __webpack_require__(1)(
+  /* script */
+  __webpack_require__(212),
+  /* template */
+  __webpack_require__(213),
+  /* styles */
+  null,
+  /* scopeId */
+  null,
+  /* moduleIdentifier (server only) */
+  null
+)
+Component.options.__file = "/home/laurent/public_html/NailSalon/vueApp/resources/assets/js/views/Product.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] Product.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-4ef00978", Component.options)
+  } else {
+    hotAPI.reload("data-v-4ef00978", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 212 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {
+            product: ''
+        };
+    },
+    mounted: function mounted() {
+        var _this = this;
+
+        axios.get(this.$route.path).then(function (response) {
+            return _this.product = response.data;
+        });
+    }
+});
+
+/***/ }),
+/* 213 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('section', {
+    staticClass: "blog offer-and-pricing"
+  }, [_c('h1', [_vm._v("Shop with us !")]), _vm._v(" "), _c('div', {
+    staticClass: "container-large"
+  }, [_c('ul', {
+    staticClass: "flex cards"
+  }, [_c('li', [_c('div', {
+    staticClass: "card-body",
+    attrs: {
+      "data-aos": "slide-up"
+    }
+  }, [_c('img', {
+    attrs: {
+      "src": '/img/' + _vm.product.image,
+      "alt": ""
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "card-footer"
+  }, [_c('h2', [_vm._v(_vm._s(_vm.product.name) + " "), _c('span', [_vm._v("$" + _vm._s(_vm.product.price / 100))])]), _vm._v(" "), _c('p', [_vm._v(_vm._s(_vm.product.description))]), _vm._v(" "), _c('a', {
+    attrs: {
+      "href": '/product/' + _vm.product.slug
+    }
+  }, [_c('p', {
+    staticClass: "call-to-action"
+  }, [_vm._v("Add to Cart")])])])])])])])
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-4ef00978", module.exports)
+  }
+}
 
 /***/ })
 /******/ ]);

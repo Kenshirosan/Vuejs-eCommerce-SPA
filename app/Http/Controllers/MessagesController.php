@@ -15,7 +15,9 @@ class MessagesController extends Controller
      */
     public function index()
     {
-        return Message::latest()->get();
+        $messages = Message::latest()->get();
+        return view('layouts/admin.message', compact('messages'));
+        // return Message::latest()->get(); ?? work on that
     }
 
     /**
@@ -46,7 +48,7 @@ class MessagesController extends Controller
             return redirect('#/')->with(['flash-errors' => $e->getMessage() ]);
         }
 
-        $status = Message::create([
+        $message = Message::create([
             'name'  => request('name'),
             'email'  => request('email'),
             'body'  => request('body')

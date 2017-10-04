@@ -1,6 +1,6 @@
 <template>
     <section class="presentation">
-    <div class="container">
+    <div class="container-large">
         <h1>Ce que nous faisons a <span class="title">Nom du magasin</span></h1>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum facere, ipsum. Tenetur adipisci veritatis qui quam quaerat natus, fugit aspernatur mollitia in distinctio iure aut rem et temporibus, velit cupiditate!

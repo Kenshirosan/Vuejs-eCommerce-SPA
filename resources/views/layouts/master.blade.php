@@ -16,6 +16,7 @@
 
         <div id="app">
         @include('includes.header')
+        @include('includes/messages.messages')
             <section class="website">
                 <flash></flash>
                 <flash-errors></flash-errors>

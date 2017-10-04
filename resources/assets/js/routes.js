@@ -12,6 +12,14 @@ let routes = [
     {
         path: '/contact',
         component: require('./views/Contact')
+    },
+    {
+        path: '/shop',
+        component: require('./views/Shop')
+    },
+    {
+        path: '/product/:slug',
+        component: require('./views/Product')
     }
 ];
 

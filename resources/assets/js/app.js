@@ -4,7 +4,6 @@ import VueRouter from 'vue-router';
 import router from './routes';
 import Form from './utilities/Form';
 
-
  Vue.use(VueRouter);
 window.Form = Form;
 // These components are nested in Home.vue

@@ -15,6 +15,9 @@ class AdminController extends Controller
 
     public function index()
     {
+        if( ! Auth::user()->isAdmin() ){
+            return redirect('/')->with('error_message', 'Page not found');
+        }
         return view('layouts.admin');
     }
 }

@@ -3,7 +3,7 @@
         <i class="icon mail-icon">email</i>example@example.com
     </p>
     <p class="pre-nav">
-        <i class="icon phone-icon">phone</i>06-04-00-00-00
+        <i class="icon phone-icon">phone</i>06-04-00-00
     </p>
     @if(Auth::guest())
          <p class="pre-nav">

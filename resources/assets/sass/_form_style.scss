@@ -24,28 +24,27 @@ button{
     background-color: $realpink;
 }
 
-.alert-flash {
-    border: 1px solid ligthen($brand-success, 20%);
-    font-size: 2em;
-    font-weight: 600;
-    border-radius: 5px;
-    padding: 1em;
-    color: white;
-    background-color: $brand-success;
-    width: 50%;
-    margin: auto;
-}
-
-.alert-flash-danger{
+.alert{
     border: 1px solid black;
     font-size: 2em;
     font-weight: 600;
     border-radius: 5px;
     padding: 1em;
     color: white;
-    background-color: red;
     width: 50%;
     margin: auto;
+}
+
+.alert-flash {
+    background-color: $brand-success;
+}
+
+.alert-warning {
+    background-color: orangered;
+}
+
+.alert-flash-danger{
+    background-color: red;
 }
 
 .is-danger{
