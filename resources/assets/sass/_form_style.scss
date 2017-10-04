@@ -1,0 +1,55 @@
+form{
+    display: inline;
+    color: white;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+input[placeholder], textarea[placeholder]{
+    color:$input-color-placeholder;
+    text-align: center;
+}
+input {
+    max-width: 100%;
+    margin-bottom: 1em;
+}
+input, textarea, button{
+    border: none;
+    border-bottom: 1px solid $input-border;
+    padding: 1em;
+    width: 100%;
+    display: block;
+}
+button{
+    background-color: $realpink;
+}
+
+.alert-flash {
+    border: 1px solid ligthen(darkgreen, 20%);
+    font-size: 2em;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 1em;
+    color: white;
+    background-color: darkgreen;
+    width: 50%;
+    margin: auto;
+}
+
+.alert-flash-danger{
+    border: 1px solid ligthen(red, 20%);
+    font-size: 2em;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 1em;
+    color: white;
+    background-color: red;
+    width: 50%;
+    margin: auto;
+}
+
+.is-danger{
+    color:red;
+    font-size: 2em;
+}

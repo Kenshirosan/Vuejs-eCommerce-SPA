@@ -7,12 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class Status extends Model
 {
     protected $fillable = [
-        'body'
+        'name', 'email', 'body'
     ];
-
-    public function user()
-    {
-        return $this->belongsTo(User::class)
-            ->select(['id','name']);
-    }
 }

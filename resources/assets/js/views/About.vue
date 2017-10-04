@@ -1,23 +1,20 @@
 <template>
-    <div class="container">
-        <div class="columns">
-            <div class="column">
-                <div class="message">
-                    <div class="message-header">About</div>
-
-                    <div class="message-body">
-                        <p>About</p>
-                    </div>
+        <section class="workers">
+            <div class="container-large">
+                <h1>Rencontrez Melle <span>Prenom</span></h1>
+                <div class="portrait">
+                    <img src="/img/portrait.jpg" alt="portrait">
+                    <h1>Nom Prenom <span>Professional blabla</span></h1>
                 </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita sunt recusandae et quisquam eaque excepturi dolorem nobis, nihil atque sint optio ut, architecto in facere nulla voluptatibus vitae blanditiis! Autem.</p>
             </div>
-        </div>
-    </div>
+        </section>
 </template>
 
 <script>
     export default {
         mounted() {
-            console.log('Component mounted.')
+            // console.log('Component mounted.')
         }
     }
 </script>

@@ -1,6 +1,213 @@
-@import url(https://fonts.googleapis.com/css?family=Dancing+Script);/*=============FONTS=========*/
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script);@charset "UTF-8";
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*=============FONTS=========*/
 
 /*============COLORS============*/
+
+form {
+  display: inline;
+  color: white;
+  max-width: 100%;
+  margin: auto;
+  margin-top: 3em;
+  margin-bottom: 2em;
+}
+
+input[placeholder],
+textarea[placeholder] {
+  color: #b1b7ba;
+  text-align: center;
+}
+
+input {
+  max-width: 100%;
+  margin-bottom: 1em;
+}
+
+input,
+textarea,
+button {
+  border: none;
+  border-bottom: 1px solid #ccd0d2;
+  padding: 1em;
+  width: 100%;
+  display: block;
+}
+
+button {
+  background-color: #FFA7B3;
+}
+
+.alert-flash {
+  border: 1px solid ligthen(darkgreen, 20%);
+  font-size: 2em;
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 1em;
+  color: white;
+  background-color: darkgreen;
+  width: 50%;
+  margin: auto;
+}
+
+.alert-flash-danger {
+  border: 1px solid ligthen(red, 20%);
+  font-size: 2em;
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 1em;
+  color: white;
+  background-color: red;
+  width: 50%;
+  margin: auto;
+}
+
+.is-danger {
+  color: red;
+  font-size: 2em;
+}
 
 /*===========General================*/
 
@@ -8,11 +215,28 @@ body {
   font-family: "Raleway";
   font-size: 1em;
   color: black;
+  background-color: #EDEDEE;
+}
+
+.is-active {
+  color: green;
+}
+
+is-danger {
+  color: #bf5329;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  line-height: 1.5em;
 }
 
 * {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 h1,
@@ -32,13 +256,23 @@ span {
   display: block;
 }
 
-*:visited {
-  color: #656D6D;
-}
-
 .wrapper {
+  background-image: url("/img/header2.jpg");
+  height: 100vh;
   background-color: #656D6D;
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .wrapper-black {
@@ -58,7 +292,19 @@ span {
 
 section {
   text-align: center;
-  background-color: #EDEDEE;
+}
+
+section h1 {
+  padding: 1em;
+  color: #FFA7B3;
+}
+
+section h1 span {
+  margin: auto;
+  padding-bottom: 3%;
+  -webkit-filter: drop-shadow(1px 1px 15px #8504B2);
+          filter: drop-shadow(1px 1px 15px #8504B2);
+  color: #8504B2;
 }
 
 /*=======================================================*/
@@ -67,24 +313,9 @@ section {
   max-width: 1920px;
 }
 
-.container-fluid img {
-  width: 1920px;
-  max-width: 100%;
-  background-color: black;
-  -webkit-filter: sepia() saturate(2) hue-rotate(295deg);
-          filter: sepia() saturate(2) hue-rotate(295deg);
-  opacity: 0.3;
-}
-
-.container-fluid .title {
-  position: absolute;
-  left: 34%;
-  top: 22%;
-}
-
 .container-fluid h1 {
   padding: 1em;
-  color: white;
+  color: #FFA7B3;
   -webkit-filter: drop-shadow(1px 1px 10px white);
           filter: drop-shadow(1px 1px 10px white);
   font-size: 3em;
@@ -102,14 +333,13 @@ section {
 
 .container-fluid p a {
   padding: 1em;
-  background-color: #FFA7B3;
+  background-color: rgba(255, 255, 255, 0.5);
   text-decoration: none;
   color: #656D6D;
 }
 
 .container-fluid p a:hover {
   color: white;
-  background-color: #8504B2;
 }
 
 .container {
@@ -127,7 +357,6 @@ section {
 .pre-header-advertisement .float-right {
   float: right;
   margin-right: 3%;
-  width: 10%;
   margin-top: 0.3%;
 }
 
@@ -185,7 +414,7 @@ nav {
 nav li a {
   color: #8504B2;
   text-decoration: none;
-  font-size: 3em;
+  font-size: 2em;
   font-family: "Dancing Script", cursive;
   padding: 0.5em;
 }
@@ -202,20 +431,8 @@ nav li a.logo:hover {
 
 /*=================Section presentation====================*/
 
-.presentation {
-  background-color: #EDEDEE;
-  padding-top: 2%;
-}
-
 .presentation h1 .title {
-  width: 20%;
-  margin: auto;
-  padding-top: 1%;
-  color: #8504B2;
-  padding-bottom: 3%;
   border-bottom: solid 1px black;
-  -webkit-filter: drop-shadow(1px 1px 10px #8504B2);
-          filter: drop-shadow(1px 1px 10px #8504B2);
 }
 
 .presentation p {
@@ -241,7 +458,6 @@ nav li a.logo:hover {
   background: white;
   padding: 0.5em;
   width: 450px;
-  max-width: 100%;
 }
 
 .presentation li .card-footer {
@@ -324,7 +540,7 @@ nav li a.logo:hover {
 .offer-and-pricing .left-box {
   float: left;
   margin-left: 2%;
-  max-width: 23%;
+  width: 23%;
 }
 
 .offer-and-pricing .right-box {
@@ -385,11 +601,6 @@ nav li a.logo:hover {
 
 /*=============THE GIRL========================*/
 
-.thegirl h1 {
-  color: #FFA7B3;
-  padding: 3%;
-}
-
 .thegirl ul .big-horizontal-card {
   width: 90%;
   display: inline;
@@ -416,46 +627,25 @@ nav li a.logo:hover {
 
 .thegirl ul img {
   width: 600px;
-  max-width: 100%;
 }
 
 /*=======================SECTION BRANDS==========================*/
 
-.brand h1 {
-  padding-top: 1em;
-  margin-bottom: 1%;
-  text-align: center;
-  color: white;
-}
-
 .brand .brands {
+  color: white;
   text-transform: uppercase;
   font-weight: 600;
-  color: white;
   font-size: 2em;
   padding: 2em;
 }
 
 /*==================SECTION WORKERS================================*/
 
-.workers h1 {
-  padding: 1em;
-}
-
-.workers h1 span {
-  width: 20%;
-  margin: auto;
-  padding-bottom: 3%;
-  -webkit-filter: drop-shadow(1px 1px 10px #8504B2);
-          filter: drop-shadow(1px 1px 10px #8504B2);
-  color: #FFA7B3;
-}
-
 .workers p {
   font-size: 1.5em;
   margin: auto;
   margin-bottom: 4%;
-  max-width: 30%;
+  width: 30%;
 }
 
 .workers .portrait img {
@@ -464,17 +654,9 @@ nav li a.logo:hover {
 
 /*================BLOG CARDS============================*/
 
-.blog h1 {
-  padding: 1em;
-}
-
 .blog h1 span {
-  width: 50%;
   margin: auto;
-  padding-bottom: 3%;
-  -webkit-filter: drop-shadow(1px 1px 10px #8504B2);
-          filter: drop-shadow(1px 1px 10px #8504B2);
-  color: #FFA7B3;
+  color: #8504B2;
 }
 
 .blog img {
@@ -492,29 +674,16 @@ nav li a.logo:hover {
 
 /*===========Pricing===========================*/
 
-.pricing h1 {
-  padding: 1em;
-}
-
-.pricing h1 span {
-  width: 50%;
-  margin: auto;
-  padding-bottom: 3%;
-  -webkit-filter: drop-shadow(1px 1px 10px #8504B2);
-          filter: drop-shadow(1px 1px 10px #8504B2);
-  color: #FFA7B3;
-}
-
 .pricing img {
-  max-width: 100%;
   float: right;
 }
 
 .pricing table {
+  border-collapse: separate;
   float: left;
   display: inline-block;
-  border-collapse: collapse;
   margin-left: 2em;
+  border-spacing: 10em;
 }
 
 .pricing td {
@@ -522,11 +691,529 @@ nav li a.logo:hover {
   padding: 0.5em;
   font-size: 2em;
   padding: 1em;
-  border-bottom: 1px solid #D5D5D5;
 }
 
 .pricing td:first-of-type {
   color: #FFA7B3;
   font-family: "Dancing Script", cursive;
+}
+
+/*===========What they say....======================*/
+
+.whatTheySay {
+  background: url("/img/hair.jpg") 0/cover fixed;
+}
+
+.whatTheySay img {
+  border-radius: 50%;
+}
+
+.whatTheySay blockquote {
+  width: 50%;
+  border-left: 10px solid #ccc;
+  margin: auto;
+  padding: 1em;
+  quotes: "\201C" "\201D" "\2018" "\2019";
+  color: white;
+  font-size: 2em;
+}
+
+.whatTheySay blockquote:before {
+  font-size: 2em;
+  color: #ccc;
+  content: open-quote;
+  line-height: 0.1em;
+}
+
+.whatTheySay blockquote p {
+  font-weight: 600;
+  display: inline;
+}
+
+/*================Footer==========================*/
+
+.footer {
+  overflow-x: hidden;
+  background-color: #212121;
+  color: white;
+}
+
+.footer img {
+  max-width: 100%;
+}
+
+.footer .grid-layout {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 33% 33% 34%;
+}
+
+.footer .box {
+  background-color: #212121;
+  color: #fff;
+  padding: 20px;
+  font-size: 150%;
+}
+
+/* iPads (portrait and landscape) ----------- */
+
+@media only screen and (min-width: 1025px) and (max-width: 1600px) {
+  .offer-and-pricing .left-box h1 {
+    font-size: 2em;
+  }
+
+  .offer-and-pricing .left-box p {
+    font-size: 1em;
+  }
+
+  .offer-and-pricing .left-box .promo {
+    font-size: 2em;
+  }
+
+  .thegirl ul li p {
+    font-size: 1em;
+    line-height: 1;
+  }
+}
+
+@media only screen and (min-width: 1150px) and (max-width: 1600px) {
+  .presentation .cards .card-title h2 {
+    font-size: 1.5em;
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /*============header nav=======================*/
+
+  body {
+    line-height: 1;
+  }
+
+  .logo {
+    max-width: 100px;
+    padding: 0.1em;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  nav li a {
+    color: #8504B2;
+    text-decoration: none;
+    font-size: 1em;
+    font-family: "Dancing Script", cursive;
+    padding: 0;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .container {
+    max-width: 1024px;
+  }
+
+  .container-large {
+    max-width: 1024px;
+  }
+
+  .pre-header-advertisement {
+    padding: 0.2em;
+  }
+
+  .pre-header-advertisement p {
+    font-size: 1em;
+  }
+
+  .pre-header-advertisement .float-right {
+    width: 20%;
+    margin-top: 0;
+  }
+
+  .pre-header-advertisement .pre-nav a {
+    color: #656D6D;
+    text-decoration: none;
+  }
+
+  .pre-header-advertisement .pre-nav .icon {
+    padding: 0.5%;
+    width: 50px;
+  }
+
+  header {
+    padding: 0;
+  }
+
+  /*========main image and welcome thingy=================*/
+
+  .container-fluid {
+    max-width: 1024px;
+  }
+
+  .container-fluid img {
+    width: 1024px;
+    max-width: 100%;
+  }
+
+  .container-fluid h1 {
+    font-size: 2em;
+  }
+
+  .container-fluid h1 span {
+    font-size: 1em;
+  }
+
+  .container-fluid p {
+    margin-top: 0.5em;
+    text-transform: uppercase;
+  }
+
+  .container-fluid p a {
+    padding: 0;
+  }
+
+  .container-fluid p a:hover {
+    color: white;
+    background-color: #8504B2;
+  }
+
+  .presentation p {
+    font-size: 1em;
+    margin: auto;
+    max-width: 40%;
+    margin-bottom: 10px;
+  }
+
+  .presentation li {
+    width: 30%;
+  }
+
+  .presentation li .card-title {
+    padding: 1em;
+  }
+
+  h2 {
+    font-size: 100%;
+  }
+
+  .offer-and-pricing .left-box p {
+    line-height: 1;
+    font-size: 1em;
+    font-weight: 100;
+  }
+
+  .offer-and-pricing .left-box h1 {
+    margin-top: 2%;
+    padding: 0;
+  }
+
+  .offer-and-pricing .left-box .promo {
+    font-size: 1.5em;
+  }
+
+  /*========thegirl=================*/
+
+  .thegirl ul li p {
+    line-height: 1;
+    font-size: 1em;
+    padding: 0.5em;
+  }
+
+  /*===========BRANDS=================*/
+
+  .brand .brands {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 100%;
+    padding: 2em;
+  }
+
+  /*===============table pricing==========================*/
+
+  .pricing table {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    border-spacing: 1em;
+    float: none;
+    display: inline;
+    margin-left: 2em;
+  }
+
+  .pricing td {
+    padding: 0.5em;
+    font-size: 1.5em;
+    padding: 1em;
+  }
+
+  /*==============What they say==============*/
+
+  .whatTheySay blockquote {
+    font-size: 1em;
+    width: 100%;
+  }
+
+  .footer {
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: #212121;
+    color: white;
+  }
+
+  .footer h1 {
+    font-size: 1em;
+  }
+
+  .footer img {
+    max-width: 50%;
+  }
+
+  .footer .grid-layout {
+    text-align: left;
+    display: grid;
+    grid-template-columns: 33% 33% 34%;
+  }
+
+  .footer .box {
+    background-color: #212121;
+    color: #fff;
+    padding: 20px;
+    font-size: 150%;
+  }
+}
+
+@media only screen and (min-device-width: 300px) and (max-device-width: 768px) {
+  body {
+    line-height: 1;
+    /*==============Presentation==============*/
+  }
+
+  body h1 {
+    font-size: 0.8em;
+  }
+
+  body section h1 {
+    font-size: 2em;
+  }
+
+  body section h1 span {
+    font-size: 1em;
+  }
+
+  body .container-fluid h1 span {
+    font-size: 1em;
+  }
+
+  body .pre-header-advertisement {
+    padding: 0.1em;
+  }
+
+  body .pre-header-advertisement .pre-nav {
+    margin: 0;
+  }
+
+  body .pre-header-advertisement p {
+    font-size: 0.4em;
+    margin: 0;
+  }
+
+  body .pre-header-advertisement .float-right {
+    float: none;
+    margin-top: 0;
+  }
+
+  body .pre-header-advertisement .icon {
+    padding: 0.5%;
+    width: 50px;
+  }
+
+  body .logo {
+    max-width: 80px;
+  }
+
+  body nav li a {
+    font-size: 0.5em;
+    padding: 0.2;
+  }
+
+  body .container-fluid p {
+    margin-top: 0;
+  }
+
+  body .container-fluid p a {
+    padding: 0;
+  }
+
+  body img {
+    max-width: 100%;
+  }
+
+  body header {
+    padding: 0;
+  }
+
+  body .presentation .container p {
+    font-size: 1em;
+    max-width: 90%;
+  }
+
+  body .presentation .container ul.flex {
+    display: block;
+  }
+
+  body .presentation .container ul.flex li {
+    width: 100%;
+  }
+
+  body .presentation .container ul.flex li .card-title {
+    font-size: 1em;
+  }
+
+  /*=================PricinAndOfferCards=======================*/
+
+  .offer-and-pricing .left-box {
+    float: none;
+    width: 100%;
+  }
+
+  .offer-and-pricing .left-box p {
+    line-height: 1;
+    max-width: 90%;
+  }
+
+  .offer-and-pricing .right-box .flex {
+    display: block;
+  }
+
+  .offer-and-pricing .right-box .flex li {
+    width: 100%;
+  }
+
+  /*======================theGirl=======================*/
+
+  .thegirl .cards li {
+    float: none;
+    width: 100%;
+  }
+
+  .thegirl .cards p {
+    margin-left: 0;
+    line-height: 1;
+    font-size: 1em;
+  }
+
+  /*================Brands===================================*/
+
+  .brand .brands {
+    font-weight: 400;
+    font-size: 1em;
+    padding: 0.5em;
+  }
+
+  .wrapper-black .flex {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  /*==============================================================*/
+
+  .workers p {
+    font-size: 1em;
+    width: 100%;
+  }
+
+  /*==============blog-offer-and-pricing==================*/
+
+  .offer-and-pricing .flex {
+    display: block;
+  }
+
+  .offer-and-pricing .flex li {
+    width: 100%;
+  }
+
+  .offer-and-pricing .flex li p {
+    font-size: 1em;
+  }
+
+  /*=====================================================*/
+
+  .pricing table {
+    border-spacing: 1em;
+  }
+
+  .pricing table td {
+    padding: 10px;
+    font-size: 1em;
+  }
+
+  .pricing img {
+    float: none;
+  }
+
+  /*==================what they say========================*/
+
+  .whatTheySay blockquote {
+    font-size: 1em;
+    width: 100%;
+  }
+
+  /*====================footer=================================*/
+
+  .footer .grid-layout {
+    display: block;
+  }
+
+  .footer .two p {
+    line-height: 1;
+    font-size: 100%;
+  }
+}
+
+@media only screen and (min-device-width: 500px) and (max-device-width: 768px) {
+  body nav li a {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1100px) {
+  .pricing img {
+    max-width: 80%;
+  }
+
+  .pricing table {
+    border-spacing: 3em;
+  }
+
+  .pricing table td {
+    font-size: 1em;
+    padding: 0;
+  }
+}
+
+@media only screen and (min-device-width: 1100px) and (max-device-width: 1260px) {
+  .pricing table {
+    border-spacing: 3em;
+  }
+
+  .pricing table td {
+    font-size: 1.5em;
+    padding: 0;
+  }
+}
+
+@media only screen and (min-device-width: 1260px) and (max-device-width: 1760px) {
+  .pricing table {
+    border-spacing: 5em;
+  }
+
+  .pricing table td {
+    font-size: 2em;
+    padding: 0;
+  }
 }
 

@@ -1,4 +1,5 @@
-<section class="thegirl">
+<template>
+    <section class="thegirl">
     <div class="container-large">
             <h1>Auburn's feature<span>beauty product</span></h1>
             <ul class="cards">
@@ -19,3 +20,7 @@
         </div>
     <div class="clearfix" style="clear:left;"></div>
 </section>
+</template>
+<script>
+
+</script>

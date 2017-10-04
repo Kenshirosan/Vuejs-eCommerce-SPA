@@ -1,4 +1,5 @@
-<section class="offer-and-pricing">
+<template>
+    <section class="offer-and-pricing">
     <div class="container-large">
         <div class="left-box">
             <h1>Quelques une de <span class="title">Nos Offres !</span></h1>
@@ -11,7 +12,7 @@
         <div class="right-box">
              <ul class="flex cards">
                 <li>
-                    <div class="card-body">
+                    <div class="card-body" data-aos="fade-down">
                         <img src="/img/card1.jpg" alt="">
                     </div>
                     <div class="card-footer">
@@ -23,7 +24,7 @@
                 </li>
                 <li>
 
-                    <div class="card-body">
+                    <div class="card-body" data-aos="fade-down">
                         <img src="/img/card2.jpg" alt="">
                     </div>
                     <div class="card-footer">
@@ -35,7 +36,7 @@
                 </li>
                 <li>
 
-                    <div class="card-body">
+                    <div class="card-body" data-aos="fade-down">
                         <img src="/img/card3.jpg" alt="">
                     </div>
                     <div class="card-footer">
@@ -50,3 +51,8 @@
 
     </div>
 </section>
+</template>
+
+<script>
+
+</script>

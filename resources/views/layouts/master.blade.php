@@ -9,26 +9,32 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
         <!-- Styles -->
-        <link rel="stylesheet" href="/css/reset.css">
+        <link rel="stylesheet" href="/css/aos.css">
         <link rel="stylesheet" href="/css/app.css">
     </head>
     <body>
 
         <div id="app">
         @include('includes.header')
-            <section class="section">
+            <section class="website">
+                <flash></flash>
+                <flash-errors></flash-errors>
                 <router-view></router-view>
-                @include('includes.presentationCards')
-                @include('includes.pricingAndOfferCards')
-                @include('includes.thegirl')
-                @include('includes/brands')
-                @include('includes.workers')
-                @include('includes.blog')
-                @include('includes.pricing')
             </section>
-            @include('includes.footer')
+        @include('includes.footer')
         </div>
 
         <script src="/js/app.js"></script>
+        <script src="/js/aos.js"></script>
+        <script>
+
+            AOS.init({
+              offset: 500,
+              duration: 600,
+              easing: 'ease-in-sine',
+              delay: 100,
+            });
+
+        </script>
     </body>
 </html>

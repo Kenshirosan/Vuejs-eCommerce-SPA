@@ -22,3 +22,13 @@ if (token) {
 } else {
     console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
 }
+
+window.Vue = require('vue');
+window.events = new Vue();
+window.flash = function (message){
+    window.events.$emit('flash', message);
+};
+
+window.flashdanger = function (message){
+    window.events.$emit('flashdanger', message);
+};

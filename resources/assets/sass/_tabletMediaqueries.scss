@@ -1,0 +1,186 @@
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+/*============header nav=======================*/
+    body {
+        line-height: 1;
+    }
+    .logo {
+        max-width: 100px;
+        padding: 0.1em;
+    }
+
+    h1{
+        font-size: 2em;
+    }
+
+    nav{
+        li {
+            a {
+                color: $pink;
+                text-decoration: none;
+                font-size: 1em;
+                font-family: $dancing;
+                padding:0;
+            }
+        }
+    }
+
+    img{
+        max-width: 100%;
+    }
+    .container {
+        max-width: 1024px;
+    }
+    .container-large {
+        max-width: 1024px;
+    }
+        .pre-header-advertisement{
+            padding: 0.2em;
+            p {
+                font-size: 1em;
+            }
+            .float-right{
+                width: 20%;
+                margin-top: 0;
+            }
+        .pre-nav {
+            a{
+                color: $darkgrey;
+                text-decoration: none;
+            }
+            .icon{
+                padding: 0.5%;
+                width: 50px;
+            }
+        }
+    }
+header {
+    padding: 0;
+}
+
+/*========main image and welcome thingy=================*/
+
+.container-fluid {
+    max-width: 1024px;
+    img{
+        width: 1024px;
+        max-width: 100%;
+    }
+    h1{
+        font-size: 2em;
+        span{
+            font-size: 1em;
+        }
+    }
+    p{
+        margin-top: 0.5em;
+        text-transform: uppercase;
+        a{
+            padding: 0;
+        }
+        a:hover{
+            color: $white;
+            background-color: $pink;
+        }
+    }
+}
+
+.presentation p {
+    font-size: 1em;
+    margin: auto;
+    max-width: 40%;
+    margin-bottom: 10px;
+}
+
+.presentation li{
+    width: 30%;
+}
+
+.presentation li .card-title {
+    padding: 1em;
+}
+h2 {
+    font-size: 100%;
+}
+
+.offer-and-pricing .left-box {
+    p{
+        line-height: 1;
+        font-size: 1em;
+        font-weight: 100;
+    }
+    h1{
+        margin-top: 2%;
+        padding: 0;
+    }
+    .promo{
+        font-size: 1.5em;
+    }
+}
+
+/*========thegirl=================*/
+.thegirl ul li p {
+    line-height: 1;
+    font-size: 1em;
+    padding: 0.5em;
+}
+
+/*===========BRANDS=================*/
+.brand .brands {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 100%;
+    padding: 2em;
+}
+/*===============table pricing==========================*/
+
+.pricing{
+    table {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        border-spacing: 1em;
+        float: none;
+        display: inline;
+        margin-left: 2em;
+    }
+    td {
+        padding: 0.5em;
+        font-size: 1.5em;
+        padding: 1em;
+    }
+}
+/*==============What they say==============*/
+.whatTheySay{
+        blockquote{
+            font-size: 1em;
+            width: 100%;
+        }
+    }
+    .footer{
+        h1{
+            font-size: 1em;
+        }
+        max-width: 100%;
+        overflow-x: hidden;
+        background-color: $footerBGColor;
+        color: $white;
+        img{
+            max-width: 50%;
+        }
+        .grid-layout {
+            text-align: left;
+            display: grid;
+            grid-template-columns: 33% 33% 34%;
+        }
+        .box {
+            background-color: $footerBGColor;
+            color: #fff;
+            padding: 20px;
+            font-size: 150%;
+        }
+    }
+}

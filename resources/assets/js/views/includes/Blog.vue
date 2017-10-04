@@ -1,10 +1,11 @@
-<section class="blog offer-and-pricing">
+<template>
+    <section class="blog offer-and-pricing">
     <div class="container-large">
     <h1>Notre blog<span>News from the beauty world</span></h1>
     </div>
     <ul class="flex cards">
         <li>
-            <div class="card-body">
+            <div class="card-body" data-aos="slide-down">
                 <img src="/img/card1.jpg" alt="">
             </div>
             <div class="card-footer">
@@ -17,7 +18,7 @@
         </li>
         <li>
 
-            <div class="card-body">
+            <div class="card-body" data-aos="slide-down">
                 <img src="/img/card2.jpg" alt="">
             </div>
             <div class="card-footer">
@@ -30,7 +31,7 @@
         </li>
         <li>
 
-            <div class="card-body">
+            <div class="card-body" data-aos="slide-down">
                 <img src="/img/card3.jpg" alt="">
             </div>
             <div class="card-footer">
@@ -42,4 +43,9 @@
             </div>
         </li>
     </ul>
-</section>
+    </section>
+</template>
+
+<script>
+
+</script>

@@ -36,13 +36,19 @@ class StatusesController extends Controller
      */
     public function store(Request $request)
     {
-        $this->validate($request, ['body' => 'required']);
+        $this->validate($request, [
+            'name' => 'required',
+            'email' => 'required',
+            'body' => 'required'
+        ]);
 
-        $status = User::find(1)
-            ->statuses()
-            ->create($request->only(['body']));
+        $status = Status::create([
+            'name'  => request('name'),
+            'email'  => request('email'),
+            'body'  => request('body')
+        ]);
 
-        return $status->load('user');
+       return response()->json(['flash' => 'Thanks'], 200);
     }
 
     /**

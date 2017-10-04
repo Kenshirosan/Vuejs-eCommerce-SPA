@@ -1,22 +1,9 @@
-<div class="pre-header-advertisement">
-    <p class="pre-nav">
-        <i class="icon mail-icon">email</i>example@example.com
-    </p>
-    <p class="pre-nav">
-        <i class="icon phone-icon">phone</i>06-04-00-00-00
-    </p>
-    <div class="float-right">
-        <p class="pre-nav">
-            <a href="">
-                <i class="icon facebook-icon">facebook</i>Suivez nous
-            </a>
-        </p>
-    </div>
-</div>
+@include('includes/partials._advertisement_banner')
+
 <header>
     <nav class="container">
         <ul class="flex">
-            <li><router-link to="/">Bienvenue</router-link></li>
+            <li><router-link to="/" exact>Bienvenue</router-link></li>
             <li><router-link to="about">About</router-link></li>
             <li><router-link to="/contact">Contact</router-link></li>
             <li>

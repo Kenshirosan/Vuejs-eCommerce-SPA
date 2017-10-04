@@ -1,4 +1,5 @@
-<section class="presentation">
+<template>
+    <section class="presentation">
     <div class="container">
         <h1>Ce que nous faisons a <span class="title">Nom du magasin</span></h1>
         <p>
@@ -10,7 +11,7 @@
                 <div class="card-title">
                     <h2>Trending style</h2>
                 </div>
-                <div class="card-body">
+                <div class="card-body" data-aos="fade-right">
                     <img src="/img/card1.jpg" alt="">
                 </div>
                 <div class="card-footer">
@@ -24,7 +25,7 @@
                  <div class="card-title">
                     <h2>Coloring process</h2>
                 </div>
-                <div class="card-body">
+                <div class="card-body" data-aos="fade-up">
                     <img src="/img/card2.jpg" alt="">
                 </div>
                 <div class="card-footer">
@@ -38,7 +39,7 @@
                  <div class="card-title">
                     <h2>Treatment and care</h2>
                 </div>
-                <div class="card-body">
+                <div class="card-body" data-aos="fade-down">
                     <img src="/img/card3.jpg" alt="">
                 </div>
                 <div class="card-footer">
@@ -51,3 +52,10 @@
         </ul>
     </div>
 </section>
+</template>
+
+<script>
+    export default{
+
+    }
+</script>
