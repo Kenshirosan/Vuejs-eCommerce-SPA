@@ -29,10 +29,10 @@
         <script>
 
             AOS.init({
-              offset: 500,
-              duration: 600,
+              offset: 300,
+              duration: 400,
               easing: 'ease-in-sine',
-              delay: 100,
+              delay: 80,
             });
 
         </script>

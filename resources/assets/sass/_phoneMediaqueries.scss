@@ -63,7 +63,15 @@ and (max-device-width : 768px) {
 
     header {
         padding: 0;
-    }
+        .flex{
+            // flex-direction: column;
+            flex-wrap: wrap;
+                a{
+                    padding: 0.5em;
+                }
+            }
+        }
+    // }
 
 /*==============Presentation==============*/
 

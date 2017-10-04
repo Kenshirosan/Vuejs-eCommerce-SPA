@@ -51,6 +51,11 @@ class RegisterController extends Controller
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:6|confirmed',
+            'last_name' => 'required',
+            'address' => 'required',
+            'address2' => 'nullable',
+            'zipcode' => 'required',
+            'phone_number' => 'required',
         ]);
     }
 
@@ -66,6 +71,11 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
+            'last_name' => $data['last_name'],
+            'address' => $data['address'],
+            'address2' => $data['address2'],
+            'zipcode' => $data['zipcode'],
+            'phone_number' => $data['phone_number'],
         ]);
     }
 }

@@ -28,7 +28,7 @@
                     flashdanger('formulaire invalide !');
                     return;
                 }
-                this.form.post('/statuses')
+                this.form.post('/messages')
                     .then(flash('Merci, nous vous contacterons bientot !'));
             }
         }

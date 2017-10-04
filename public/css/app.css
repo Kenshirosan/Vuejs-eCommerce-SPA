@@ -147,7 +147,6 @@ table {
 /*============COLORS============*/
 
 form {
-  display: inline;
   color: white;
   max-width: 100%;
   margin: auto;
@@ -181,19 +180,19 @@ button {
 }
 
 .alert-flash {
-  border: 1px solid ligthen(darkgreen, 20%);
+  border: 1px solid ligthen(#2ab27b, 20%);
   font-size: 2em;
   font-weight: 600;
   border-radius: 5px;
   padding: 1em;
   color: white;
-  background-color: darkgreen;
+  background-color: #2ab27b;
   width: 50%;
   margin: auto;
 }
 
 .alert-flash-danger {
-  border: 1px solid ligthen(red, 20%);
+  border: 1px solid black;
   font-size: 2em;
   font-weight: 600;
   border-radius: 5px;
@@ -222,7 +221,7 @@ body {
   color: green;
 }
 
-is-danger {
+.is-danger {
   color: #bf5329;
 }
 
@@ -333,13 +332,14 @@ section h1 span {
 
 .container-fluid p a {
   padding: 1em;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   color: #656D6D;
 }
 
 .container-fluid p a:hover {
   color: white;
+  background-color: black;
 }
 
 .container {
@@ -374,6 +374,7 @@ section h1 span {
 .pre-header-advertisement .pre-nav a {
   color: #656D6D;
   text-decoration: none;
+  margin-left: 1.2em;
 }
 
 .pre-header-advertisement .pre-nav .icon {
@@ -1054,6 +1055,15 @@ nav li a.logo:hover {
 
   body header {
     padding: 0;
+  }
+
+  body header .flex {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  body header .flex a {
+    padding: 0.5em;
   }
 
   body .presentation .container p {

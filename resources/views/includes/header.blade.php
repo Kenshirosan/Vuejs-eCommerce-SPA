@@ -12,6 +12,13 @@
             <li><router-link to="/shop">Boutique</router-link></li>
             <li><router-link to="/prix-par-services">Tarifs</router-link></li>
             <li><router-link to="/promotions">Promotions</router-link></li>
+            @if(Auth::check() && Auth::user()->isAdmin() )
+                <li><a href="/admin">Admin</a></li>
+            @endif
+            @if( Auth::guest() )
+                <li><a href="/register">Register</a></li>
+                <li><a href="/login">Login</a></li>
+            @endif
         </ul>
     </nav>
 </header>

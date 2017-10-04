@@ -24,7 +24,7 @@
                 <td>45$</td>
             </tr>
         </table>
-        <img src="/img/beauty.png" alt="Beautiful make-up">
+        <img src="/img/beauty.png" alt="Beautiful make-up" data-aos="fade-up-right">
 
         <div class="clearfix" style="clear:both;"></div>
     </div>

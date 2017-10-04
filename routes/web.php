@@ -15,5 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/statuses', 'StatusesController@index');
-Route::post('/statuses', 'StatusesController@store');
+Route::get('/admin', 'AdminController@index');
+
+Route::get('/messages', 'MessagesController@index');
+Route::post('/messages', 'MessagesController@store');
+
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();

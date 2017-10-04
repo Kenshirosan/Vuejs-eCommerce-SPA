@@ -30963,19 +30963,19 @@ webpackContext.id = 157;
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_vm._m(0), _vm._v(" "), _c('presentationcards'), _vm._v(" "), _c('pricingandoffercards'), _vm._v(" "), _c('thegirl'), _vm._v(" "), _c('brands'), _vm._v(">\n    "), _c('workers'), _vm._v(">\n    "), _c('blog'), _vm._v(" "), _c('pricing'), _vm._v(" "), _c('whattheysay')], 1)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
+  return _c('div', [_c('div', {
     staticClass: "container-fluid"
   }, [_c('div', {
     staticClass: "wrapper"
   }, [_c('div', {
     staticClass: "title"
-  }, [_c('h1', [_vm._v("Bienvenue "), _c('span', [_vm._v("Chez Entreprise")])]), _vm._v(" "), _c('p', [_c('a', {
+  }, [_vm._m(0), _vm._v(" "), _c('p', [_c('router-link', {
     attrs: {
-      "href": "/contact"
+      "to": "/contact"
     }
-  }, [_vm._v("Make an appointment")])])])])])
+  }, [_vm._v("Make an appointment")])], 1)])])]), _vm._v(" "), _c('presentationcards'), _vm._v(" "), _c('pricingandoffercards'), _vm._v(" "), _c('thegirl'), _vm._v(" "), _c('brands'), _vm._v(">\n    "), _c('workers'), _vm._v(">\n    "), _c('blog'), _vm._v(" "), _c('pricing'), _vm._v(" "), _c('whattheysay')], 1)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('h1', [_vm._v("Bienvenue "), _c('span', [_vm._v("Chez Entreprise")])])
 }]}
 module.exports.render._withStripped = true
 if (false) {
@@ -31232,7 +31232,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 flashdanger('formulaire invalide !');
                 return;
             }
-            this.form.post('/statuses').then(flash('Merci, nous vous contacterons bientot !'));
+            this.form.post('/messages').then(flash('Merci, nous vous contacterons bientot !'));
         }
     }
 });
@@ -32531,7 +32531,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('h1', [_vm._v("Quelques un de nos"), _c('span', [_vm._v("Tarifs")])]), _vm._v(" "), _c('table', [_c('tr', [_c('td', [_vm._v("Basic styling")]), _vm._v(" "), _c('td', [_vm._v("50min")]), _vm._v(" "), _c('td', [_vm._v("35$")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("Coloring")]), _vm._v(" "), _c('td', [_vm._v("50min")]), _vm._v(" "), _c('td', [_vm._v("45$")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("Manucure")]), _vm._v(" "), _c('td', [_vm._v("50min")]), _vm._v(" "), _c('td', [_vm._v("45$")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("Epilation")]), _vm._v(" "), _c('td', [_vm._v("50min")]), _vm._v(" "), _c('td', [_vm._v("45$")])])]), _vm._v(" "), _c('img', {
     attrs: {
       "src": "/img/beauty.png",
-      "alt": "Beautiful make-up"
+      "alt": "Beautiful make-up",
+      "data-aos": "fade-up-right"
     }
   }), _vm._v(" "), _c('div', {
     staticClass: "clearfix",

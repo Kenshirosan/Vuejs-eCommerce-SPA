@@ -15,7 +15,7 @@ body {
 .is-active{
     color: green;
 }
-is-danger{
+.is-danger{
     color: $brand-danger;
 }
 
@@ -100,12 +100,13 @@ section{
         text-transform: uppercase;
         a{
             padding: 1em;
-            background-color: rgba(255,255,255,0.5);
+            background-color: rgba(255,255,255,0.8);
             text-decoration: none;
             color: $darkgrey;
         }
         a:hover{
             color: $white;
+            background-color: $black;
         }
     }
 }
@@ -135,6 +136,7 @@ section{
         a{
             color: $darkgrey;
             text-decoration: none;
+            margin-left: 1.2em;
         }
         .icon{
             padding: 0.5%;
