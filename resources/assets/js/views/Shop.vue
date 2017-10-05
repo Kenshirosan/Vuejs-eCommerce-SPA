@@ -10,10 +10,7 @@
                     <div class="card-footer">
                         <h2>{{ product.name }} <span>${{ product.price /100}}</span></h2>
                         <p>{{ product.description }}</p>
-                       <!--  <a :href="'/product/'+ product.slug ">
-                            <p class="call-to-action">Voir plus..</p>
-                        </a> -->
-                        <router-link :to="'/product/'+ product.slug" exact>toto</router-link>
+                        <router-link :to="'/product/'+ product.slug" exact><p class="call-to-action">toto</p></router-link>
                     </div>
                 </li>
             </ul>

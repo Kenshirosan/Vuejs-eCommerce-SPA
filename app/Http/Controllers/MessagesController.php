@@ -38,15 +38,11 @@ class MessagesController extends Controller
      */
     public function store(Request $request)
     {
-        try{
-            $this->validate($request, [
-                'name' => 'required',
-                'email' => 'required',
-                'body' => 'required'
-            ]);
-        } catch (\Exception $e){
-            return redirect('#/')->with(['flash-errors' => $e->getMessage() ]);
-        }
+        $this->validate($request, [
+            'name' => 'required',
+            'email' => 'required',
+            'body' => 'required'
+        ]);
 
         $message = Message::create([
             'name'  => request('name'),

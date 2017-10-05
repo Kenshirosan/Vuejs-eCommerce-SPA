@@ -20,9 +20,25 @@
 </template>
 
 <script>
+    import presentationcards from './includes/PresentationCards.vue';
+    import pricingandoffercards from './includes/PricingAndOfferCards.vue';
+    import thegirl from './includes/TheGirl.vue';
+    import brands from './includes/Brands.vue';
+    import workers from './includes/Workers.vue';
+    import blog from './includes/Blog.vue';
+    import pricing from './includes/Pricing.vue';
+    import whattheysay from './includes/WhatTheySay.vue';
     import moment from 'moment';
 
     export default {
-
+        components: { presentationcards,
+                      pricingandoffercards,
+                      thegirl,
+                      brands,
+                      workers,
+                      blog,
+                      pricing,
+                      whattheysay
+                    }
     }
 </script>
