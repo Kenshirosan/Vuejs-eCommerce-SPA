@@ -8,6 +8,7 @@ window.Form = Form;
 
 Vue.component('flash', require('./components/Flash.vue'));
 Vue.component('flash-errors', require('./components/Flash_Errors.vue'));
+
 const app = new Vue({
     el: '#app',
 

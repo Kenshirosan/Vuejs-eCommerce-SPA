@@ -30,7 +30,7 @@
         <script>
 
             AOS.init({
-              offset: 300,
+              offset: 200,
               duration: 400,
               easing: 'ease-in-sine',
               delay: 80,

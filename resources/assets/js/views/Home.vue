@@ -11,8 +11,8 @@
         <presentationcards></presentationcards>
         <pricingandoffercards></pricingandoffercards>
         <thegirl></thegirl>
-        <brands></brands>>
-        <workers></workers>>
+        <brands></brands>
+        <workers></workers>
         <blog></blog>
         <pricing></pricing>
         <whattheysay></whattheysay>

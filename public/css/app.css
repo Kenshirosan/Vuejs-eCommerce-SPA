@@ -899,6 +899,14 @@ nav li a.logo:hover {
     font-size: 100%;
   }
 
+  .offer-and-pricing .card-footer {
+    width: 59%;
+  }
+
+  .blog .card-footer {
+    width: 74%;
+  }
+
   .offer-and-pricing .left-box p {
     line-height: 1;
     font-size: 1em;
@@ -907,7 +915,7 @@ nav li a.logo:hover {
 
   .offer-and-pricing .left-box h1 {
     margin-top: 2%;
-    padding: 0;
+    padding: 15px;
   }
 
   .offer-and-pricing .left-box .promo {
@@ -920,6 +928,7 @@ nav li a.logo:hover {
     line-height: 1;
     font-size: 1em;
     padding: 0.5em;
+    width: 90%;
   }
 
   /*===========BRANDS=================*/
@@ -1113,6 +1122,7 @@ nav li a.logo:hover {
     margin-left: 0;
     line-height: 1;
     font-size: 1em;
+    margin: auto;
   }
 
   /*================Brands===================================*/

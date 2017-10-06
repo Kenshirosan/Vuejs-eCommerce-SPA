@@ -12,7 +12,7 @@
         <div class="right-box">
              <ul class="flex cards">
                 <li>
-                    <div class="card-body" data-aos="fade-down">
+                    <div class="card-body" data-aos="fade-up">
                         <img src="/img/card1.jpg" alt="">
                     </div>
                     <div class="card-footer">
@@ -24,7 +24,7 @@
                 </li>
                 <li>
 
-                    <div class="card-body" data-aos="fade-down">
+                    <div class="card-body" data-aos="fade-up">
                         <img src="/img/card2.jpg" alt="">
                     </div>
                     <div class="card-footer">
@@ -36,7 +36,7 @@
                 </li>
                 <li>
 
-                    <div class="card-body" data-aos="fade-down">
+                    <div class="card-body" data-aos="fade-up">
                         <img src="/img/card3.jpg" alt="">
                     </div>
                     <div class="card-footer">

@@ -19232,6 +19232,7 @@ window.Form = __WEBPACK_IMPORTED_MODULE_3__utilities_Form__["a" /* default */];
 
 Vue.component('flash', __webpack_require__(199));
 Vue.component('flash-errors', __webpack_require__(204));
+
 var app = new Vue({
     el: '#app',
 
@@ -30822,7 +30823,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   return _c('section', {
     staticClass: "presentation"
   }, [_c('div', {
-    staticClass: "container-large"
+    staticClass: "container"
   }, [_c('h1', [_vm._v("Ce que nous faisons a "), _c('span', {
     staticClass: "title"
   }, [_vm._v("Nom du magasin")])]), _vm._v(" "), _c('p', [_vm._v("\n            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum facere, ipsum. Tenetur adipisci veritatis qui quam quaerat natus, fugit aspernatur mollitia in distinctio iure aut rem et temporibus, velit cupiditate!\n        ")]), _vm._v(" "), _c('ul', {
@@ -31021,7 +31022,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('li', [_c('div', {
     staticClass: "card-body",
     attrs: {
-      "data-aos": "fade-down"
+      "data-aos": "fade-up"
     }
   }, [_c('img', {
     attrs: {
@@ -31039,7 +31040,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v("Details")])])])]), _vm._v(" "), _c('li', [_c('div', {
     staticClass: "card-body",
     attrs: {
-      "data-aos": "fade-down"
+      "data-aos": "fade-up"
     }
   }, [_c('img', {
     attrs: {
@@ -31057,7 +31058,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v("Details")])])])]), _vm._v(" "), _c('li', [_c('div', {
     staticClass: "card-body",
     attrs: {
-      "data-aos": "fade-down"
+      "data-aos": "fade-up"
     }
   }, [_c('img', {
     attrs: {
@@ -31474,7 +31475,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('li', [_c('div', {
     staticClass: "card-body",
     attrs: {
-      "data-aos": "slide-down"
+      "data-aos": "fade-down"
     }
   }, [_c('img', {
     attrs: {
@@ -31492,7 +31493,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v("Voir plus..")])])])]), _vm._v(" "), _c('li', [_c('div', {
     staticClass: "card-body",
     attrs: {
-      "data-aos": "slide-down"
+      "data-aos": "fade-down"
     }
   }, [_c('img', {
     attrs: {
@@ -31510,7 +31511,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v("Voir plus..")])])])]), _vm._v(" "), _c('li', [_c('div', {
     staticClass: "card-body",
     attrs: {
-      "data-aos": "slide-down"
+      "data-aos": "fade-down"
     }
   }, [_c('img', {
     attrs: {
@@ -32029,7 +32030,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "to": "/contact"
     }
-  }, [_vm._v("Make an appointment")])], 1)])])]), _vm._v(" "), _c('presentationcards'), _vm._v(" "), _c('pricingandoffercards'), _vm._v(" "), _c('thegirl'), _vm._v(" "), _c('brands'), _vm._v(">\n    "), _c('workers'), _vm._v(">\n    "), _c('blog'), _vm._v(" "), _c('pricing'), _vm._v(" "), _c('whattheysay')], 1)
+  }, [_vm._v("Make an appointment")])], 1)])])]), _vm._v(" "), _c('presentationcards'), _vm._v(" "), _c('pricingandoffercards'), _vm._v(" "), _c('thegirl'), _vm._v(" "), _c('brands'), _vm._v(" "), _c('workers'), _vm._v(" "), _c('blog'), _vm._v(" "), _c('pricing'), _vm._v(" "), _c('whattheysay')], 1)
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('h1', [_vm._v("Bienvenue "), _c('span', [_vm._v("Chez Entreprise")])])
 }]}
