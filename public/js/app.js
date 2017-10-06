@@ -19232,6 +19232,9 @@ window.Form = __WEBPACK_IMPORTED_MODULE_3__utilities_Form__["a" /* default */];
 
 Vue.component('flash', __webpack_require__(199));
 Vue.component('flash-errors', __webpack_require__(204));
+Vue.component('modal', __webpack_require__(219));
+// Vue.component('modalcomponent', require('./components/ModalComponent.vue'));
+
 var app = new Vue({
     el: '#app',
 
@@ -30591,6 +30594,12 @@ var routes = [{
 }, {
     path: '/product/:slug',
     component: __webpack_require__(194)
+}, {
+    path: '/register',
+    component: __webpack_require__(213)
+}, {
+    path: '/login',
+    component: __webpack_require__(216)
 }];
 
 /* harmony default export */ __webpack_exports__["a"] = (new __WEBPACK_IMPORTED_MODULE_0_vue_router__["a" /* default */]({
@@ -30616,7 +30625,7 @@ var Component = __webpack_require__(1)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "/home/laurent/public_html/NailSalon/vueApp/resources/assets/js/views/Home.vue"
+Component.options.__file = "/home/laurent/public_html/Vuejs-eCommerce-SPA/resources/assets/js/views/Home.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Home.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -30627,9 +30636,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-8f20b44c", Component.options)
+    hotAPI.createRecord("data-v-6b3ac608", Component.options)
   } else {
-    hotAPI.reload("data-v-8f20b44c", Component.options)
+    hotAPI.reload("data-v-6b3ac608", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -30724,7 +30733,7 @@ var Component = __webpack_require__(1)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "/home/laurent/public_html/NailSalon/vueApp/resources/assets/js/views/includes/PresentationCards.vue"
+Component.options.__file = "/home/laurent/public_html/Vuejs-eCommerce-SPA/resources/assets/js/views/includes/PresentationCards.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] PresentationCards.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -30735,9 +30744,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-5fc925a0", Component.options)
+    hotAPI.createRecord("data-v-bf346164", Component.options)
   } else {
-    hotAPI.reload("data-v-5fc925a0", Component.options)
+    hotAPI.reload("data-v-bf346164", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -30893,7 +30902,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-5fc925a0", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-bf346164", module.exports)
   }
 }
 
@@ -30914,7 +30923,7 @@ var Component = __webpack_require__(1)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "/home/laurent/public_html/NailSalon/vueApp/resources/assets/js/views/includes/PricingAndOfferCards.vue"
+Component.options.__file = "/home/laurent/public_html/Vuejs-eCommerce-SPA/resources/assets/js/views/includes/PricingAndOfferCards.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] PricingAndOfferCards.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -30925,9 +30934,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-8deef6de", Component.options)
+    hotAPI.createRecord("data-v-9fe357ba", Component.options)
   } else {
-    hotAPI.reload("data-v-8deef6de", Component.options)
+    hotAPI.reload("data-v-9fe357ba", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -31078,7 +31087,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-8deef6de", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-9fe357ba", module.exports)
   }
 }
 
@@ -31099,7 +31108,7 @@ var Component = __webpack_require__(1)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "/home/laurent/public_html/NailSalon/vueApp/resources/assets/js/views/includes/TheGirl.vue"
+Component.options.__file = "/home/laurent/public_html/Vuejs-eCommerce-SPA/resources/assets/js/views/includes/TheGirl.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] TheGirl.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -31110,9 +31119,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-251d94a4", Component.options)
+    hotAPI.createRecord("data-v-3bc3dfd2", Component.options)
   } else {
-    hotAPI.reload("data-v-251d94a4", Component.options)
+    hotAPI.reload("data-v-3bc3dfd2", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -31187,7 +31196,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-251d94a4", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-3bc3dfd2", module.exports)
   }
 }
 
@@ -31208,7 +31217,7 @@ var Component = __webpack_require__(1)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "/home/laurent/public_html/NailSalon/vueApp/resources/assets/js/views/includes/Brands.vue"
+Component.options.__file = "/home/laurent/public_html/Vuejs-eCommerce-SPA/resources/assets/js/views/includes/Brands.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Brands.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -31219,9 +31228,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-794ad8a5", Component.options)
+    hotAPI.createRecord("data-v-40376fb7", Component.options)
   } else {
-    hotAPI.reload("data-v-794ad8a5", Component.options)
+    hotAPI.reload("data-v-40376fb7", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -31275,7 +31284,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-794ad8a5", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-40376fb7", module.exports)
   }
 }
 
@@ -31296,7 +31305,7 @@ var Component = __webpack_require__(1)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "/home/laurent/public_html/NailSalon/vueApp/resources/assets/js/views/includes/Workers.vue"
+Component.options.__file = "/home/laurent/public_html/Vuejs-eCommerce-SPA/resources/assets/js/views/includes/Workers.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Workers.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -31307,9 +31316,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-3c8922a8", Component.options)
+    hotAPI.createRecord("data-v-0f3c8c4c", Component.options)
   } else {
-    hotAPI.reload("data-v-3c8922a8", Component.options)
+    hotAPI.reload("data-v-0f3c8c4c", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -31361,7 +31370,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-3c8922a8", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-0f3c8c4c", module.exports)
   }
 }
 
@@ -31382,7 +31391,7 @@ var Component = __webpack_require__(1)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "/home/laurent/public_html/NailSalon/vueApp/resources/assets/js/views/includes/Blog.vue"
+Component.options.__file = "/home/laurent/public_html/Vuejs-eCommerce-SPA/resources/assets/js/views/includes/Blog.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Blog.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -31393,9 +31402,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-c398b88a", Component.options)
+    hotAPI.createRecord("data-v-19c25166", Component.options)
   } else {
-    hotAPI.reload("data-v-c398b88a", Component.options)
+    hotAPI.reload("data-v-19c25166", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -31531,7 +31540,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-c398b88a", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-19c25166", module.exports)
   }
 }
 
@@ -31552,7 +31561,7 @@ var Component = __webpack_require__(1)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "/home/laurent/public_html/NailSalon/vueApp/resources/assets/js/views/includes/Pricing.vue"
+Component.options.__file = "/home/laurent/public_html/Vuejs-eCommerce-SPA/resources/assets/js/views/includes/Pricing.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Pricing.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -31563,9 +31572,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-0302013d", Component.options)
+    hotAPI.createRecord("data-v-19a84c6b", Component.options)
   } else {
-    hotAPI.reload("data-v-0302013d", Component.options)
+    hotAPI.reload("data-v-19a84c6b", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -31642,7 +31651,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-0302013d", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-19a84c6b", module.exports)
   }
 }
 
@@ -31663,7 +31672,7 @@ var Component = __webpack_require__(1)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "/home/laurent/public_html/NailSalon/vueApp/resources/assets/js/views/includes/WhatTheySay.vue"
+Component.options.__file = "/home/laurent/public_html/Vuejs-eCommerce-SPA/resources/assets/js/views/includes/WhatTheySay.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] WhatTheySay.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -31674,9 +31683,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-6e0862b6", Component.options)
+    hotAPI.createRecord("data-v-35cd3238", Component.options)
   } else {
-    hotAPI.reload("data-v-6e0862b6", Component.options)
+    hotAPI.reload("data-v-35cd3238", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -31730,7 +31739,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-6e0862b6", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-35cd3238", module.exports)
   }
 }
 
@@ -32037,7 +32046,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-8f20b44c", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-6b3ac608", module.exports)
   }
 }
 
@@ -32058,7 +32067,7 @@ var Component = __webpack_require__(1)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "/home/laurent/public_html/NailSalon/vueApp/resources/assets/js/views/About.vue"
+Component.options.__file = "/home/laurent/public_html/Vuejs-eCommerce-SPA/resources/assets/js/views/About.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] About.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -32069,9 +32078,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-ebeb03bc", Component.options)
+    hotAPI.createRecord("data-v-30a363b4", Component.options)
   } else {
-    hotAPI.reload("data-v-ebeb03bc", Component.options)
+    hotAPI.reload("data-v-30a363b4", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -32131,7 +32140,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-ebeb03bc", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-30a363b4", module.exports)
   }
 }
 
@@ -32156,7 +32165,7 @@ var Component = __webpack_require__(1)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "/home/laurent/public_html/NailSalon/vueApp/resources/assets/js/views/Contact.vue"
+Component.options.__file = "/home/laurent/public_html/Vuejs-eCommerce-SPA/resources/assets/js/views/Contact.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Contact.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -32167,9 +32176,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-33e051f5", Component.options)
+    hotAPI.createRecord("data-v-d053c9f2", Component.options)
   } else {
-    hotAPI.reload("data-v-33e051f5", Component.options)
+    hotAPI.reload("data-v-d053c9f2", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -32190,13 +32199,13 @@ var content = __webpack_require__(187);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(5)("10277c2a", content, false);
+var update = __webpack_require__(5)("31a33440", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-33e051f5\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Contact.vue", function() {
-     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-33e051f5\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Contact.vue");
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-d053c9f2\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Contact.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-d053c9f2\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Contact.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -32297,8 +32306,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "container"
+  return _c('section', {
+    staticClass: "form"
   }, [_c('form', {
     attrs: {
       "action": ""
@@ -32406,7 +32415,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-33e051f5", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-d053c9f2", module.exports)
   }
 }
 
@@ -32427,7 +32436,7 @@ var Component = __webpack_require__(1)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "/home/laurent/public_html/NailSalon/vueApp/resources/assets/js/views/Shop.vue"
+Component.options.__file = "/home/laurent/public_html/Vuejs-eCommerce-SPA/resources/assets/js/views/Shop.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Shop.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -32438,9 +32447,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-7e54af1e", Component.options)
+    hotAPI.createRecord("data-v-73a0c89f", Component.options)
   } else {
-    hotAPI.reload("data-v-7e54af1e", Component.options)
+    hotAPI.reload("data-v-73a0c89f", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -32530,7 +32539,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-7e54af1e", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-73a0c89f", module.exports)
   }
 }
 
@@ -32551,7 +32560,7 @@ var Component = __webpack_require__(1)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "/home/laurent/public_html/NailSalon/vueApp/resources/assets/js/views/Product.vue"
+Component.options.__file = "/home/laurent/public_html/Vuejs-eCommerce-SPA/resources/assets/js/views/Product.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Product.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -32562,9 +32571,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-4ef00978", Component.options)
+    hotAPI.createRecord("data-v-3c7dc456", Component.options)
   } else {
-    hotAPI.reload("data-v-4ef00978", Component.options)
+    hotAPI.reload("data-v-3c7dc456", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -32663,7 +32672,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-4ef00978", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-3c7dc456", module.exports)
   }
 }
 
@@ -32944,7 +32953,7 @@ var Component = __webpack_require__(1)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "/home/laurent/public_html/NailSalon/vueApp/resources/assets/js/components/Flash.vue"
+Component.options.__file = "/home/laurent/public_html/Vuejs-eCommerce-SPA/resources/assets/js/components/Flash.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Flash.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -32955,9 +32964,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-7a043471", Component.options)
+    hotAPI.createRecord("data-v-1d540bc2", Component.options)
   } else {
-    hotAPI.reload("data-v-7a043471", Component.options)
+    hotAPI.reload("data-v-1d540bc2", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -32978,13 +32987,13 @@ var content = __webpack_require__(201);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(5)("24e656a6", content, false);
+var update = __webpack_require__(5)("c54b2292", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7a043471\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Flash.vue", function() {
-     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7a043471\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Flash.vue");
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1d540bc2\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Flash.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1d540bc2\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Flash.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -33078,7 +33087,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-7a043471", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-1d540bc2", module.exports)
   }
 }
 
@@ -33103,7 +33112,7 @@ var Component = __webpack_require__(1)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "/home/laurent/public_html/NailSalon/vueApp/resources/assets/js/components/Flash_Errors.vue"
+Component.options.__file = "/home/laurent/public_html/Vuejs-eCommerce-SPA/resources/assets/js/components/Flash_Errors.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Flash_Errors.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -33114,9 +33123,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-ddc1e36e", Component.options)
+    hotAPI.createRecord("data-v-4f4228db", Component.options)
   } else {
-    hotAPI.reload("data-v-ddc1e36e", Component.options)
+    hotAPI.reload("data-v-4f4228db", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -33137,13 +33146,13 @@ var content = __webpack_require__(206);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(5)("7ae605db", content, false);
+var update = __webpack_require__(5)("33e698dc", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ddc1e36e\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Flash_Errors.vue", function() {
-     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ddc1e36e\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Flash_Errors.vue");
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4f4228db\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Flash_Errors.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4f4228db\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Flash_Errors.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -33237,7 +33246,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-ddc1e36e", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-4f4228db", module.exports)
   }
 }
 
@@ -33246,6 +33255,613 @@ if (false) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 210 */,
+/* 211 */,
+/* 212 */,
+/* 213 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var Component = __webpack_require__(1)(
+  /* script */
+  __webpack_require__(214),
+  /* template */
+  __webpack_require__(215),
+  /* styles */
+  null,
+  /* scopeId */
+  null,
+  /* moduleIdentifier (server only) */
+  null
+)
+Component.options.__file = "/home/laurent/public_html/Vuejs-eCommerce-SPA/resources/assets/js/views/Register.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] Register.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-98cfe568", Component.options)
+  } else {
+    hotAPI.reload("data-v-98cfe568", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 214 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({});
+
+/***/ }),
+/* 215 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _vm._m(0)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('section', {
+    staticClass: "form"
+  }, [_c('div', {
+    staticClass: "register-box"
+  }, [_c('div', {
+    staticClass: "register-box-body"
+  }, [_c('form', {
+    attrs: {
+      "action": "",
+      "method": "post"
+    }
+  }, [_c('div', {
+    staticClass: "form-group"
+  }, [_c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "email",
+      "name": "email",
+      "placeholder": "email"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "glyphicon glyphicon-envelope form-control-feedback"
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "form-group"
+  }, [_c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "name": "name",
+      "placeholder": "name"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "glyphicon glyphicon-user form-control-feedback"
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "form-group"
+  }, [_c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "name": "last_name",
+      "placeholder": "Last name"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "glyphicon glyphicon-user form-control-feedback"
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "form-group"
+  }, [_c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "name": "address",
+      "placeholder": "Address"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "glyphicon glyphicon-home form-control-feedback"
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "form-group"
+  }, [_c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "name": "address2",
+      "placeholder": "Address2"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "glyphicon glyphicon-home form-control-feedback"
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "form-group"
+  }, [_c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "name": "zipcode",
+      "placeholder": "zipcode"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "glyphicon glyphicon-home form-control-feedback"
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "form-group"
+  }, [_c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "name": "phone_number",
+      "placeholder": "Phone number"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "glyphicon glyphicon-phone form-control-feedback"
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "form-group"
+  }, [_c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "password",
+      "name": "password",
+      "placeholder": "password"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "glyphicon glyphicon-lock form-control-feedback"
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "form-group"
+  }, [_c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "password",
+      "name": "password_confirmation",
+      "placeholder": "password"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "glyphicon glyphicon-log-in form-control-feedback"
+  })]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-primary btn-block btn-flat",
+    attrs: {
+      "type": "submit"
+    }
+  }, [_vm._v("Register")])])])])])
+}]}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-98cfe568", module.exports)
+  }
+}
+
+/***/ }),
+/* 216 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var Component = __webpack_require__(1)(
+  /* script */
+  __webpack_require__(217),
+  /* template */
+  __webpack_require__(218),
+  /* styles */
+  null,
+  /* scopeId */
+  null,
+  /* moduleIdentifier (server only) */
+  null
+)
+Component.options.__file = "/home/laurent/public_html/Vuejs-eCommerce-SPA/resources/assets/js/views/Login.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] Login.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-1a02e190", Component.options)
+  } else {
+    hotAPI.reload("data-v-1a02e190", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 217 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {
+            form: new Form({ email: '', password: '' })
+        };
+    },
+
+    methods: {
+        onSubmit: function onSubmit() {
+            if (!this.form.email || !this.form.password) {
+                flashdanger('formulaire invalide !');
+                return;
+            }
+            this.form.post('/login').then(flash('You are now logged in')).then(window.location.replace("/"));
+        }
+    }
+});
+
+/***/ }),
+/* 218 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('section', {
+    staticClass: "form"
+  }, [_c('div', {
+    staticClass: "login-box"
+  }, [_c('div', {
+    staticClass: "login-box-body"
+  }, [_c('p', {
+    staticClass: "login-box-msg"
+  }, [_vm._v("Login")]), _vm._v(" "), _c('form', {
+    attrs: {
+      "action": "",
+      "method": "POST"
+    },
+    on: {
+      "submit": function($event) {
+        $event.preventDefault();
+        _vm.onSubmit($event)
+      }
+    }
+  }, [_c('div', {
+    staticClass: "form-group"
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.form.email),
+      expression: "form.email"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "type": "email",
+      "name": "email",
+      "placeholder": "email"
+    },
+    domProps: {
+      "value": (_vm.form.email)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.form.email = $event.target.value
+      }
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "glyphicon glyphicon-envelope form-control-feedback"
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "form-group"
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.form.password),
+      expression: "form.password"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "type": "password",
+      "name": "password",
+      "placeholder": "password"
+    },
+    domProps: {
+      "value": (_vm.form.password)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.form.password = $event.target.value
+      }
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "glyphicon glyphicon-lock form-control-feedback"
+  })]), _vm._v(" "), _vm._m(0)])])])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "col-xs-4"
+  }, [_c('button', {
+    staticClass: "btn btn-primary btn-block btn-flat",
+    attrs: {
+      "type": "submit"
+    }
+  }, [_vm._v("Sign in")])])])
+}]}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-1a02e190", module.exports)
+  }
+}
+
+/***/ }),
+/* 219 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var Component = __webpack_require__(1)(
+  /* script */
+  __webpack_require__(220),
+  /* template */
+  __webpack_require__(221),
+  /* styles */
+  null,
+  /* scopeId */
+  null,
+  /* moduleIdentifier (server only) */
+  null
+)
+Component.options.__file = "/home/laurent/public_html/Vuejs-eCommerce-SPA/resources/assets/js/components/Modal.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] Modal.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-91e74348", Component.options)
+  } else {
+    hotAPI.reload("data-v-91e74348", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 220 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ModalComponent_vue__ = __webpack_require__(222);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ModalComponent_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__ModalComponent_vue__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+	data: {
+		showModal: false
+	},
+	methods: {
+		showModal: function showModal() {
+			// this.
+		}
+	}
+});
+
+/***/ }),
+/* 221 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [_c('div', {
+    staticClass: "modal"
+  }, [_vm._v("\n\t\t\tmodal\n\t\t")]), _vm._v(" "), _c('modalcomponent', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (false),
+      expression: "false"
+    }]
+  })], 1)
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-91e74348", module.exports)
+  }
+}
+
+/***/ }),
+/* 222 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var Component = __webpack_require__(1)(
+  /* script */
+  __webpack_require__(223),
+  /* template */
+  __webpack_require__(224),
+  /* styles */
+  null,
+  /* scopeId */
+  null,
+  /* moduleIdentifier (server only) */
+  null
+)
+Component.options.__file = "/home/laurent/public_html/Vuejs-eCommerce-SPA/resources/assets/js/components/ModalComponent.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] ModalComponent.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-0e8cec9e", Component.options)
+  } else {
+    hotAPI.reload("data-v-0e8cec9e", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 223 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+	name: 'modalcomponent'
+});
+
+/***/ }),
+/* 224 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "modal"
+  }, [_vm._v("\n\tmodal component\n")])
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-0e8cec9e", module.exports)
+  }
+}
 
 /***/ })
 /******/ ]);

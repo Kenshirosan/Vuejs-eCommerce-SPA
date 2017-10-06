@@ -20,6 +20,14 @@ let routes = [
     {
         path: '/product/:slug',
         component: require('./views/Product')
+    },
+    {
+        path: '/register',
+        component: require('./views/Register')
+    },
+    {
+        path: '/login',
+        component: require('./views/Login')
     }
 ];
 

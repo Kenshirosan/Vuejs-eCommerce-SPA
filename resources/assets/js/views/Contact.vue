@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <section class="form">
         <form action="" @submit.prevent="onSubmit" @keydown="form.errors.clear()">
             <input type="text" id="name" name="name" placeholder="your name" v-model="form.name">
         <span class="help is-danger" v-if="this.form.errors.has('name')" v-text="this.form.errors.get('name')"></span>
@@ -9,7 +9,7 @@
         <span class="help is-danger" v-if="form.errors.has('body')" v-text="form.errors.get('body')"></span>
             <button type="submit" name="submit" :disabled="form.errors.any()">Envoyer</button>
         </form>
-    </div>
+    </section>
 
 </template>
 
