@@ -17,7 +17,11 @@
             @endif
             @if( Auth::guest() )
                 <li><a href="/register">Register</a></li>
-                <li><a href="/login">Login</a></li>
+                {{-- <li><a href="/login">Login</a></li> --}}
+                <li><a href="" @click.prevent="showModal = true">Login</a></li>
+                <modal v-if="showModal" @close="showModal = false">
+                    @include('includes.loginForm')
+                </modal>
             @endif
         </ul>
     </nav>

@@ -207,6 +207,67 @@ button {
   font-size: 2em;
 }
 
+.modal {
+  position: absolute;
+  padding: 3em;
+  max-width: 100%;
+  background-color: rgba(255, 0, 255, 0.5);
+  top: 30vh;
+  right: 43vw;
+  z-index: 1000;
+}
+
+.modal-close {
+  position: relative;
+  left: 6em;
+  font-size: 2em;
+  font-weight: 600;
+  color: white;
+}
+
+.login-box-msg,
+label {
+  color: white;
+  font-weight: 600;
+}
+
+.auth-links a {
+  color: white;
+  font-weight: 600;
+}
+
+/*=========Login modal form===========================*/
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .modal {
+    right: 26vw;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .modal {
+    right: 30vw;
+  }
+}
+
+@media only screen and (min-device-width: 300px) and (max-device-width: 360px) {
+  .modal {
+    right: 0;
+  }
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+  .modal {
+    right: 14px;
+  }
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 767px) and (orientation: landscape) {
+  .modal {
+    right: 21vw;
+  }
+}
+
 /*===========General================*/
 
 body {
