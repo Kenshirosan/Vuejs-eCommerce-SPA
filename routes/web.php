@@ -22,9 +22,12 @@ Route::get('/product/{slug}', 'ShopController@show');
 Route::post('/messages', 'MessagesController@store');
 
 //admin routes;
-Route::get('/admin', 'AdminController@index')->middleware('admin');
-Route::post('/add-product', 'ProductController@store')->middleware('admin');
-Route::get('/admin/messages', 'MessagesController@index')->middleware('admin');
+Route::get('/admin', 'AdminController@index');
+Route::get('/admin/categories', 'CategoryController@create');
+Route::post('/admin/categories', 'CategoryController@store');
+Route::post('/add-product', 'ProductController@store');
+Route::get('/admin/messages', 'MessagesController@index');
+Route::get('/admin/messages/{id}', 'MessagesController@show');
 
 
 

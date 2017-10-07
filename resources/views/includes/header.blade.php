@@ -8,7 +8,7 @@
             <li><router-link to="/contact">Contact</router-link></li>
             <li><router-link to="/prix-par-services">Tarifs</router-link></li>
             <li>
-                <router-link to="/" exact><img src="/img/logo.jpg" class="logo" alt="Logo de Poupette Nails Salon"></router-link>
+                <img src="/img/logo.jpg" class="logo" alt="Logo de Poupette Nails Salon">
             </li>
             <li><router-link to="/shop">Boutique</router-link></li>
             <li><router-link to="/promotions">Promotions</router-link></li>

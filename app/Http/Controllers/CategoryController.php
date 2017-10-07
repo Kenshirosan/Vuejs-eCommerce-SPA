@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\User;
-use App\Message;
+use App\Category;
 use Illuminate\Http\Request;
 
-class MessagesController extends Controller
+
+class CategoryController extends Controller
 {
 
     public function __construct()
@@ -20,8 +20,7 @@ class MessagesController extends Controller
      */
     public function index()
     {
-        $messages = Message::latest()->get();
-        return view('layouts/admin.message', compact('messages'));
+
     }
 
     /**
@@ -31,7 +30,9 @@ class MessagesController extends Controller
      */
     public function create()
     {
-        //
+        $categories = Category::all();
+
+        return view('layouts/admin.categories', compact('categories'));
     }
 
     /**
@@ -42,43 +43,36 @@ class MessagesController extends Controller
      */
     public function store(Request $request)
     {
-        $this->validate($request, [
+        $this->validate($request,[
             'name' => 'required',
-            'email' => 'required',
-            'body' => 'required'
         ]);
 
-        $message = Message::create([
-            'name'  => request('name'),
-            'email'  => request('email'),
-            'body'  => request('body')
+        Category::create([
+            'name' => request('name')
         ]);
 
-       return response()->json(['flash' => 'Thanks'], 200);
+        return back()->with('success_message', 'Category added');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Status  $message
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Message $message)
+    public function show($id)
     {
         //
     }
 
-
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Status  $message
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Message $message)
+    public function destroy($id)
     {
-        $message = Message::findOrFail('id');
-        $message->delete();
-        return back()->with('success_message', 'Message deleted');
+        //
     }
 }

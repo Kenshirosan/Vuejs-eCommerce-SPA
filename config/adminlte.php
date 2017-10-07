@@ -109,11 +109,6 @@ return [
 
     'menu' => [
         'Store Administration',
-        // [
-        //     'text' => 'Blog',
-        //     'url'  => 'admin/blog',
-        //     'can'  => 'manage-blog',
-        // ],
         [
             'text'        => 'Ajoutez un produit',
             'url'         => '/admin',
