@@ -16,12 +16,14 @@
                 <li><a href="/admin">Admin</a></li>
             @endif
             @if( Auth::guest() )
-                <li><a href="/register">Register</a></li>
-                {{-- <li><a href="/login">Login</a></li> --}}
-                <li><a href="" @click.prevent="showModal = true">Login</a></li>
-                <modal v-if="showModal" @close="showModal = false">
+                <li @click.prevent="showLoginModal = false"><a href="/register" @click.prevent="showRegisterModal = true">Register</a></li>
+                <register-modal v-if="showRegisterModal" @close="showRegisterModal = false">
+                    @include('includes.registerForm')
+                </register-modal>
+                <li @click.prevent="showRegisterModal = false"><a href="" @click.prevent="showLoginModal = true">Login</a></li>
+                <login-modal v-if="showLoginModal" @close="showLoginModal = false">
                     @include('includes.loginForm')
-                </modal>
+                </login-modal>
             @endif
         </ul>
     </nav>

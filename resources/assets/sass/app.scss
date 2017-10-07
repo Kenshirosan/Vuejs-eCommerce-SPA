@@ -62,12 +62,6 @@ span{
     background-color: $black;
 }
 
-.flex{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
 section{
     text-align: center;
     h1{
@@ -159,6 +153,12 @@ section{
 
 header {
     padding: 2em 0 2em;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .logo {

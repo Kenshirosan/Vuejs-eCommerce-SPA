@@ -9,6 +9,7 @@
 @section('content')
 @include('includes/messages.messages')
     @if(  Auth::user()->isAdmin() )
+    @include('includes.errors')
     <h1>Hello, {{ Auth::user()->name }}</h1>
     <form class="form-horizontal" method="POST" action="/add-product" enctype="multipart/form-data">
         {{ csrf_field() }}
@@ -132,7 +133,6 @@
     </form>
 
     <form class="form-horizontal" method="get" action="/logout">
-        {{-- @include('includes.error') --}}
         {{ csrf_field() }}
         <div class="form-group">
             <div class="col-md-12">
@@ -146,17 +146,16 @@
 
         <ul class=list-group>
             @if(Auth::user()->theboss)
-                <li class="list-group-item"><a href="/panel" class="btn btn-primary">View all</a></li>
-               {{--  @foreach( $orders as $order )
-                    <li class="list-group-item"><h4>Latest Orders: {{ $order->id }}</h4>{{ $order->name }} {{ $order->last_name }} paid $<strong>{{ $order->price /100 }}</strong> for {{ preg_replace('/[]["]/ ', '', $order->items) }} on <strong>{{ $order->created_at->toFormattedDateString() }}</strong> at {{    $order->created_at->toTimeString() }}</li>
-                @endforeach --}}
+                <li class="list-group-item"><a href="/admin/messages" class="btn btn-primary">View all</a></li>
+                @foreach( $messages as $message )
+                    <li class="list-group-item"><h4>Latest messages: {{ $message->email }}</h4>{{ $message->name }} said {{ $message->body }} on <strong>{{ $message->created_at->toFormattedDateString() }}</strong> at {{    $message->created_at->toTimeString() }}</li>
+                @endforeach
             @endif
 
         </ul>
     </div>
 
     @elseif( !Auth::user()->isAdmin() )
-
         <script type="text/javascript">
             window.location = "{{ url('/shop') }}";
         </script>

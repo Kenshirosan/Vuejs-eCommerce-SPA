@@ -214,7 +214,17 @@ button {
   background-color: rgba(255, 0, 255, 0.5);
   top: 30vh;
   right: 43vw;
-  z-index: 1000;
+  z-index: 1;
+}
+
+.modal-background {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: rgba(10, 10, 10, 0.86);
+  z-index: -1;
 }
 
 .modal-close {
@@ -264,7 +274,7 @@ label {
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 767px) and (orientation: landscape) {
   .modal {
-    right: 21vw;
+    right: 20vw;
   }
 }
 
@@ -336,17 +346,6 @@ span {
 
 .wrapper-black {
   background-color: black;
-}
-
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
 section {
@@ -461,6 +460,17 @@ section h1 span {
 
 header {
   padding: 2em 0 2em;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .logo {
@@ -1056,7 +1066,7 @@ nav li a.logo:hover {
   }
 }
 
-@media only screen and (min-device-width: 300px) and (max-device-width: 768px) {
+@media only screen and (min-device-width: 200px) and (max-device-width: 768px) {
   body {
     line-height: 1;
     /*==============Presentation==============*/
@@ -1106,7 +1116,7 @@ nav li a.logo:hover {
   }
 
   body nav li a {
-    font-size: 0.5em;
+    font-size: 1em;
     padding: 0.2;
   }
 
@@ -1127,6 +1137,10 @@ nav li a.logo:hover {
   }
 
   body header .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -1272,6 +1286,18 @@ nav li a.logo:hover {
   .pricing table td {
     font-size: 1em;
     padding: 0;
+  }
+
+  .pre-header-advertisement .pre-nav {
+    margin-left: 2%;
+  }
+
+  .pre-header-advertisement .pre-nav a {
+    margin-left: 0;
+  }
+
+  .pre-header-advertisement .float-right {
+    float: none;
   }
 }
 

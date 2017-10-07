@@ -8,12 +8,14 @@ window.Form = Form;
 
 Vue.component('flash', require('./components/Flash.vue'));
 Vue.component('flash-errors', require('./components/Flash_Errors.vue'));
-Vue.component('modal', require('./components/Modal.vue'));
+Vue.component('login-modal', require('./components/Modal.vue'));
+Vue.component('register-modal', require('./components/RegisterModal.vue'));
 
 const app = new Vue({
     el: '#app',
     data: {
-            showModal: false
+            showLoginModal: false,
+            showRegisterModal: false
         },
     router
 });

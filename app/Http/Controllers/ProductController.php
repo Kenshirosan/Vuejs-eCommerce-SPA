@@ -6,13 +6,12 @@ use Image;
 use App\User;
 use App\Product;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 
 class ProductController extends Controller
 {
     public function __construct()
     {
-        return $this->middleware('auth');
+        $this->middleware('admin');
     }
 
     /**
@@ -23,11 +22,6 @@ class ProductController extends Controller
     */
     public function store(Request $request)
     {
-        // dd($request->all());
-        if ( ! Auth::user()->isAdmin()) {
-            return redirect('/shop')->with(['error_message' => 'Page not found']);
-        }
-
         try{
         $this->validateRequest($request);
         }

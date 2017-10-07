@@ -17,7 +17,6 @@ class MessagesController extends Controller
     {
         $messages = Message::latest()->get();
         return view('layouts/admin.message', compact('messages'));
-        // return Message::latest()->get(); ?? work on that
     }
 
     /**

@@ -53,14 +53,24 @@ button{
 }
 
 .modal{
-        position: absolute;
-        padding: 3em;
-        max-width: 100%;
-        background-color: rgba(255,0,255,0.5);
-        top: 30vh;
-        right: 43vw;
-        z-index: 1000;
-    }
+    position: absolute;
+    padding: 3em;
+    max-width: 100%;
+    background-color: rgba(255,0,255,0.5);
+    top: 30vh;
+    right: 43vw;
+    z-index: 1;
+}
+
+.modal-background {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: rgba(10, 10, 10, 0.86);
+    z-index: -1;
+}
 
 .modal-close {
     position: relative;
@@ -117,6 +127,6 @@ and (min-device-width : 360px)
 and (max-device-width : 767px)
 and (orientation: landscape) {
     .modal {
-        right: 21vw;
+        right: 20vw;
     }
 }

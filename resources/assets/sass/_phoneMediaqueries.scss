@@ -1,5 +1,5 @@
 @media only screen
-and (min-device-width : 300px)
+and (min-device-width : 200px)
 and (max-device-width : 768px) {
     body {
         line-height: 1;
@@ -44,7 +44,7 @@ and (max-device-width : 768px) {
     nav{
         li {
             a {
-                font-size: 0.5em;
+                font-size: 1em;
                 padding:0.2;
             }
         }
@@ -64,14 +64,13 @@ and (max-device-width : 768px) {
     header {
         padding: 0;
         .flex{
-            // flex-direction: column;
+            flex-direction: column;
             flex-wrap: wrap;
                 a{
                     padding: 0.5em;
                 }
             }
         }
-    // }
 
 /*==============Presentation==============*/
 
@@ -226,7 +225,20 @@ and (max-device-width : 1100px) {
             }
         }
     }
+
+    .pre-header-advertisement{
+        .pre-nav{
+            margin-left: 2%;
+            a{
+                margin-left: 0;
+            }
+        }
+        .float-right{
+            float: none;
+        }
+    }
 }
+
 
 @media only screen
 and (min-device-width : 1100px)
