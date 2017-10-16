@@ -8,7 +8,7 @@
     @include('includes/messages.messages')
 <h1 class="text-center text-info">Create a Category</h1>
 <hr>
-    <form action="/add-category" class="form-horizontal" method="POST">
+    <form action="/admin/categories" class="form-horizontal" method="POST">
         {{ csrf_field() }}
 
         {{-- COUPONS name --}}

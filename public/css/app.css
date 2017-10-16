@@ -500,6 +500,12 @@ nav li a.logo:hover {
   background-color: white;
 }
 
+/*====================Welcome div=========================*/
+
+.welcome h1 {
+  background-color: black;
+}
+
 /*=================Section presentation====================*/
 
 .presentation h1 .title {

@@ -2,7 +2,7 @@
     <div>
         <div class="container-fluid">
             <div class="wrapper">
-                <div class="title">
+                <div class="welcome">
                     <h1>Bienvenue <span>Chez Entreprise</span></h1>
                     <p><router-link to="/contact">Make an appointment</router-link></p>
                 </div>

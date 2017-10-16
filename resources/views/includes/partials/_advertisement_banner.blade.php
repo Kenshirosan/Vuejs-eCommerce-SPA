@@ -19,7 +19,7 @@
                 <i class="fa fa-fw fa-power-off"></i> Log Out
             </a>
         </p>
-        <form id="logout-form" action="http://localhost:8000/logout" method="POST" style="display: none;">
+        <form id="logout-form" action="/logout" method="POST" style="display: none;">
             {{ csrf_field() }}
         </form>
     @endif
