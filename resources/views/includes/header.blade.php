@@ -15,7 +15,7 @@
             @if(Auth::check() && Auth::user()->isAdmin() )
                 <li><a href="/admin">Admin</a></li>
             @endif
-            @if( Auth::guest() )
+            {{--@if( Auth::guest() )
                 <li @click.prevent="showLoginModal = false"><a href="/register" @click.prevent="showRegisterModal = true">Register</a></li>
                 <register-modal v-if="showRegisterModal" @close="showRegisterModal = false">
                     @include('includes.registerForm')
@@ -24,7 +24,7 @@
                 <login-modal v-if="showLoginModal" @close="showLoginModal = false">
                     @include('includes.loginForm')
                 </login-modal>
-            @endif
+            @endif--}}
         </ul>
     </nav>
 </header>

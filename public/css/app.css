@@ -133,7 +133,6 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
   content: none;
 }
 
@@ -281,10 +280,10 @@ label {
 /*===========General================*/
 
 body {
-  font-family: "Raleway";
+    font-family: "Raleway", serif;
   font-size: 1em;
   color: black;
-  background-color: #EDEDEE;
+  background-color: #CECECE;
 }
 
 .is-active {
