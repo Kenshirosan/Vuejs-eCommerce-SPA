@@ -1,4 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Dancing+Script);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script);
+@charset "UTF-8";
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -86,17 +87,17 @@ time,
 mark,
 audio,
 video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -112,33 +113,33 @@ hgroup,
 menu,
 nav,
 section {
-  display: block;
+    display: block;
 }
 
 body {
-  line-height: 1;
+    line-height: 1;
 }
 
 ol,
 ul {
-  list-style: none;
+    list-style: none;
 }
 
 blockquote,
 q {
-  quotes: none;
+    quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: none;
+    content: none;
 }
 
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /*=============FONTS=========*/
@@ -146,1185 +147,1184 @@ table {
 /*============COLORS============*/
 
 form {
-  color: white;
-  max-width: 100%;
-  margin: auto;
-  margin-top: 3em;
-  margin-bottom: 2em;
+    color: white;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 3em;
+    margin-bottom: 2em;
 }
 
 input[placeholder],
 textarea[placeholder] {
-  color: #b1b7ba;
-  text-align: center;
+    color: #b1b7ba;
+    text-align: center;
 }
 
 input {
-  max-width: 100%;
-  margin-bottom: 1em;
+    max-width: 100%;
+    margin-bottom: 1em;
 }
 
 input,
 textarea,
 button {
-  border: none;
-  border-bottom: 1px solid #ccd0d2;
-  padding: 1em;
-  width: 100%;
-  display: block;
+    border: none;
+    border-bottom: 1px solid #ccd0d2;
+    padding: 1em;
+    width: 100%;
+    display: block;
 }
 
 button {
-  background-color: #FFA7B3;
+    background-color: #ffa7b3;
 }
 
 .alert {
-  border: 1px solid black;
-  font-size: 2em;
-  font-weight: 600;
-  border-radius: 5px;
-  padding: 1em;
-  color: white;
-  width: 50%;
-  margin: auto;
+    border: 1px solid black;
+    font-size: 2em;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 1em;
+    color: white;
+    width: 50%;
+    margin: auto;
 }
 
 .alert-flash {
-  background-color: #2ab27b;
+    background-color: #2ab27b;
 }
 
 .alert-warning {
-  background-color: orangered;
+    background-color: orangered;
 }
 
 .alert-flash-danger {
-  background-color: red;
+    background-color: red;
 }
 
 .is-danger {
-  color: red;
-  font-size: 2em;
+    color: red;
+    font-size: 2em;
 }
 
 .modal {
-  position: absolute;
-  padding: 3em;
-  max-width: 100%;
-  background-color: rgba(255, 0, 255, 0.5);
-  top: 30vh;
-  right: 43vw;
-  z-index: 1;
+    position: absolute;
+    padding: 3em;
+    max-width: 100%;
+    background-color: rgba(255, 0, 255, 0.5);
+    top: 30vh;
+    right: 43vw;
+    z-index: 1;
 }
 
 .modal-background {
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  background-color: rgba(10, 10, 10, 0.86);
-  z-index: -1;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: rgba(10, 10, 10, 0.86);
+    z-index: -1;
 }
 
 .modal-close {
-  position: relative;
-  left: 6em;
-  font-size: 2em;
-  font-weight: 600;
-  color: white;
+    position: relative;
+    left: 6em;
+    font-size: 2em;
+    font-weight: 600;
+    color: white;
 }
 
 .login-box-msg,
 label {
-  color: white;
-  font-weight: 600;
+    color: white;
+    font-weight: 600;
 }
 
 .auth-links a {
-  color: white;
-  font-weight: 600;
+    color: white;
+    font-weight: 600;
 }
 
 /*=========Login modal form===========================*/
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  .modal {
-    right: 26vw;
-  }
+    .modal {
+        right: 26vw;
+    }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-  .modal {
-    right: 30vw;
-  }
+    .modal {
+        right: 30vw;
+    }
 }
 
 @media only screen and (min-device-width: 300px) and (max-device-width: 360px) {
-  .modal {
-    right: 0;
-  }
+    .modal {
+        right: 0;
+    }
 }
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
-  .modal {
-    right: 14px;
-  }
+    .modal {
+        right: 14px;
+    }
 }
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 767px) and (orientation: landscape) {
-  .modal {
-    right: 20vw;
-  }
+    .modal {
+        right: 20vw;
+    }
 }
 
 /*===========General================*/
 
 body {
     font-family: "Raleway", serif;
-  font-size: 1em;
-  color: black;
-  background-color: #CECECE;
+    font-size: 1em;
+    color: black;
+    background-color: #cecece;
 }
 
 .is-active {
-  color: green;
+    color: green;
 }
 
 .is-danger {
-  color: #bf5329;
+    color: #bf5329;
 }
 
 img {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 p {
-  line-height: 1.5em;
+    line-height: 1.5em;
 }
 
 * {
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
 }
 
 h1,
 h2 {
-  font-family: "Dancing Script", cursive;
+    font-family: "Dancing Script", cursive;
 }
 
 h1 {
-  font-size: 3em;
+    font-size: 3em;
 }
 
 h2 {
-  font-size: 2em;
+    font-size: 2em;
 }
 
 span {
-  display: block;
+    display: block;
 }
 
 .wrapper {
-  background-image: url("/img/header2.jpg");
-  height: 100vh;
-  background-color: #656D6D;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+    background-image: url("/img/header2.jpg");
+    height: 100vh;
+    background-color: #656d6d;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .wrapper-black {
-  background-color: black;
+    background-color: black;
 }
 
 section {
-  text-align: center;
+    text-align: center;
 }
 
 section h1 {
-  padding: 1em;
-  color: #FFA7B3;
+    padding: 1em;
+    color: #ffa7b3;
 }
 
 section h1 span {
-  margin: auto;
-  padding-bottom: 3%;
-  -webkit-filter: drop-shadow(1px 1px 15px #8504B2);
-          filter: drop-shadow(1px 1px 15px #8504B2);
-  color: #8504B2;
+    margin: auto;
+    padding-bottom: 3%;
+    -webkit-filter: drop-shadow(1px 1px 15px #8504b2);
+    filter: drop-shadow(1px 1px 15px #8504b2);
+    color: #8504b2;
 }
 
 /*=======================================================*/
 
 .container-fluid {
-  max-width: 1920px;
+    max-width: 1920px;
 }
 
 .container-fluid h1 {
-  padding: 1em;
-  color: #FFA7B3;
-  -webkit-filter: drop-shadow(1px 1px 10px white);
-          filter: drop-shadow(1px 1px 10px white);
-  font-size: 3em;
+    padding: 1em;
+    color: #ffa7b3;
+    -webkit-filter: drop-shadow(1px 1px 10px white);
+    filter: drop-shadow(1px 1px 10px white);
+    font-size: 3em;
 }
 
 .container-fluid h1 span {
-  font-size: 2em;
+    font-size: 2em;
 }
 
 .container-fluid p {
-  margin-top: 0.5em;
-  font-size: 2.5em;
-  text-transform: uppercase;
+    margin-top: 0.5em;
+    font-size: 2.5em;
+    text-transform: uppercase;
 }
 
 .container-fluid p a {
-  padding: 1em;
-  background-color: rgba(255, 255, 255, 0.8);
-  text-decoration: none;
-  color: #656D6D;
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    color: #656d6d;
 }
 
 .container-fluid p a:hover {
-  color: white;
-  background-color: black;
+    color: white;
+    background-color: black;
 }
 
 .container {
-  max-width: 1600px;
-  margin: auto;
+    max-width: 1600px;
+    margin: auto;
 }
 
 /*=====PRE-HEADER===&&==Header================*/
 
 .pre-header-advertisement {
-  padding: 1em;
-  background-color: black;
+    padding: 1em;
+    background-color: black;
 }
 
 .pre-header-advertisement .float-right {
-  float: right;
-  margin-right: 3%;
-  margin-top: 0.3%;
+    float: right;
+    margin-right: 3%;
+    margin-top: 0.3%;
 }
 
 .pre-header-advertisement p {
-  display: inline;
-  font-size: 1.2em;
-  font-weight: 800;
-  color: #656D6D;
+    display: inline;
+    font-size: 1.2em;
+    font-weight: 800;
+    color: #656d6d;
 }
 
 .pre-header-advertisement .pre-nav {
-  margin-left: 3%;
+    margin-left: 3%;
 }
 
 .pre-header-advertisement .pre-nav a {
-  color: #656D6D;
-  text-decoration: none;
-  margin-left: 1.2em;
+    color: #656d6d;
+    text-decoration: none;
+    margin-left: 1.2em;
 }
 
 .pre-header-advertisement .pre-nav .icon {
-  padding: 0.5%;
-  background-color: #656D6D;
-  display: inline-block;
-  width: 50px;
+    padding: 0.5%;
+    background-color: #656d6d;
+    display: inline-block;
+    width: 50px;
 }
 
 .pre-header-advertisement .pre-nav i.mail-icon {
-  -webkit-mask: url("/icons/SVG/mail.svg") no-repeat 50%;
-          mask: url("/icons/SVG/mail.svg") no-repeat 50%;
+    -webkit-mask: url("/icons/SVG/mail.svg") no-repeat 50%;
+    mask: url("/icons/SVG/mail.svg") no-repeat 50%;
 }
 
 .pre-header-advertisement .pre-nav i.phone-icon {
-  -webkit-mask: url("/icons/SVG/phone.svg") no-repeat 50%;
-          mask: url("/icons/SVG/phone.svg") no-repeat 50%;
+    -webkit-mask: url("/icons/SVG/phone.svg") no-repeat 50%;
+    mask: url("/icons/SVG/phone.svg") no-repeat 50%;
 }
 
 .pre-header-advertisement .pre-nav i.facebook-icon {
-  -webkit-mask: url("/icons/SVG/facebook-logo.svg") no-repeat 50%;
-          mask: url("/icons/SVG/facebook-logo.svg") no-repeat 50%;
+    -webkit-mask: url("/icons/SVG/facebook-logo.svg") no-repeat 50%;
+    mask: url("/icons/SVG/facebook-logo.svg") no-repeat 50%;
 }
 
 header {
-  padding: 2em 0 2em;
+    padding: 2em 0 2em;
 }
 
 .flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
 }
 
 .logo {
-  max-width: 150px;
-  padding: 0.2em;
+    max-width: 150px;
+    padding: 0.2em;
 }
 
 nav {
-  padding: 0.5em;
+    padding: 0.5em;
 }
 
 nav li a {
-  color: #8504B2;
-  text-decoration: none;
-  font-size: 2em;
-  font-family: "Dancing Script", cursive;
-  padding: 0.5em;
+    color: #8504b2;
+    text-decoration: none;
+    font-size: 2em;
+    font-family: "Dancing Script", cursive;
+    padding: 0.5em;
 }
 
 nav li a:hover {
-  color: white;
-  background-color: black;
+    color: white;
+    background-color: black;
 }
 
 nav li a.logo:hover {
-  cursor: default;
-  background-color: white;
+    cursor: default;
+    background-color: white;
 }
 
 /*====================Welcome div=========================*/
 
 .welcome h1 {
-  background-color: black;
+    background-color: black;
 }
 
 /*=================Section presentation====================*/
 
 .presentation h1 .title {
-  border-bottom: solid 1px black;
+    border-bottom: solid 1px black;
 }
 
 .presentation p {
-  font-size: 1.5em;
-  margin: auto;
-  margin-top: 2%;
-  margin-bottom: 4%;
-  max-width: 30%;
+    font-size: 1.5em;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    max-width: 30%;
 }
 
 .presentation li {
-  width: 33%;
+    width: 33%;
 }
 
 .presentation li .card-title {
-  -webkit-filter: drop-shadow(1px 1px 10px #ffffcb);
-          filter: drop-shadow(1px 1px 10px #ffffcb);
-  padding: 1em;
-  font-size: 2em;
+    -webkit-filter: drop-shadow(1px 1px 10px #ffffcb);
+    filter: drop-shadow(1px 1px 10px #ffffcb);
+    padding: 1em;
+    font-size: 2em;
 }
 
 .presentation li img {
-  background: white;
-  padding: 0.5em;
-  width: 450px;
+    background: white;
+    padding: 0.5em;
+    width: 450px;
 }
 
 .presentation li .card-footer {
-  background-color: white;
-  width: 350px;
-  max-width: 100%;
-  margin: auto;
-  position: relative;
-  bottom: 100px;
+    background-color: white;
+    width: 350px;
+    max-width: 100%;
+    margin: auto;
+    position: relative;
+    bottom: 100px;
 }
 
 .presentation li .card-footer p {
-  padding: 1em;
-  font-family: "Dancing Script", cursive;
-  color: #8504B2;
-  max-width: 100%;
+    padding: 1em;
+    font-family: "Dancing Script", cursive;
+    color: #8504b2;
+    max-width: 100%;
 }
 
 .presentation li .card-footer span {
-  font-family: "Raleway";
+    font-family: "Raleway";
 }
 
 .presentation li .card-footer a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .presentation li .card-footer .call-to-action {
-  display: block;
-  font-size: 1.5em;
-  text-decoration: none;
-  color: white;
-  font-weight: 600;
-  background-color: #FFA7B3;
-  font-family: "Raleway";
-  text-transform: uppercase;
+    display: block;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    background-color: #ffa7b3;
+    font-family: "Raleway";
+    text-transform: uppercase;
 }
 
 .presentation li .card-footer .call-to-action:hover {
-  background-color: #8504B2;
+    background-color: #8504b2;
 }
 
 /*============Offres et Tarifs==================*/
 
 .offer-and-pricing {
-  padding-bottom: 5%;
-  background: url("/img/hair.jpg") 0/cover fixed;
+    padding-bottom: 5%;
+    background: url("/img/hair.jpg") 0 / cover fixed;
 }
 
 .offer-and-pricing .container-large {
-  max-width: 1920px;
+    max-width: 1920px;
 }
 
 .offer-and-pricing h1 {
-  padding: 1em;
-  color: #FFA7B3;
+    padding: 1em;
+    color: #ffa7b3;
 }
 
 .offer-and-pricing h1 span {
-  font-size: 1.5em;
-  color: #ffc;
-  display: block;
+    font-size: 1.5em;
+    color: #ffc;
+    display: block;
 }
 
 .offer-and-pricing .promo {
-  font-size: 3em;
+    font-size: 3em;
 }
 
 .offer-and-pricing .promo span {
-  font-family: "Dancing Script", cursive;
-  display: block;
+    font-family: "Dancing Script", cursive;
+    display: block;
 }
 
 .offer-and-pricing p {
-  font-size: 1.5em;
-  font-weight: 600;
-  color: white;
-  margin-bottom: 10%;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10%;
 }
 
 .offer-and-pricing .left-box {
-  float: left;
-  margin-left: 2%;
-  width: 23%;
+    float: left;
+    margin-left: 2%;
+    width: 23%;
 }
 
 .offer-and-pricing .right-box {
-  padding-top: 3%;
+    padding-top: 3%;
 }
 
 .offer-and-pricing .right-box img {
-  width: 450px;
-  max-width: 100%;
-  margin-bottom: 10%;
+    width: 450px;
+    max-width: 100%;
+    margin-bottom: 10%;
 }
 
 .offer-and-pricing .right-box h2 {
-  padding: 2em;
+    padding: 2em;
 }
 
 .offer-and-pricing li {
-  width: 30%;
+    width: 30%;
 }
 
 .offer-and-pricing .card-footer {
-  background-color: white;
-  margin: auto;
-  position: relative;
-  bottom: 100px;
+    background-color: white;
+    margin: auto;
+    position: relative;
+    bottom: 100px;
 }
 
 .offer-and-pricing .card-footer p {
-  padding: 1em;
-  font-family: "Dancing Script", cursive;
-  color: #8504B2;
-  max-width: 100%;
+    padding: 1em;
+    font-family: "Dancing Script", cursive;
+    color: #8504b2;
+    max-width: 100%;
 }
 
 .offer-and-pricing .card-footer span {
-  display: block;
-  font-family: "Raleway";
+    display: block;
+    font-family: "Raleway";
 }
 
 .offer-and-pricing .card-footer a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .offer-and-pricing .card-footer .call-to-action {
-  display: block;
-  font-size: 1.5em;
-  text-decoration: none;
-  color: white;
-  font-weight: 600;
-  background-color: #FFA7B3;
-  font-family: "Raleway";
-  text-transform: uppercase;
+    display: block;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    background-color: #ffa7b3;
+    font-family: "Raleway";
+    text-transform: uppercase;
 }
 
 .offer-and-pricing .card-footer .call-to-action:hover {
-  background-color: #8504B2;
+    background-color: #8504b2;
 }
 
 /*=============THE GIRL========================*/
 
 .thegirl ul .big-horizontal-card {
-  width: 90%;
-  display: inline;
+    width: 90%;
+    display: inline;
 }
 
 .thegirl ul li {
-  float: left;
-  width: 30%;
+    float: left;
+    width: 30%;
 }
 
 .thegirl ul li p {
-  font-size: 1.5em;
-  color: #656D6D;
-  margin-left: 30%;
-  padding: 0.5em;
+    font-size: 1.5em;
+    color: #656d6d;
+    margin-left: 30%;
+    padding: 0.5em;
 }
 
 .thegirl ul .left {
-  float: left;
-  width: 800px;
-  position: relative;
-  z-index: 1;
+    float: left;
+    width: 800px;
+    position: relative;
+    z-index: 1;
 }
 
 .thegirl ul img {
-  width: 600px;
+    width: 600px;
 }
 
 /*=======================SECTION BRANDS==========================*/
 
 .brand .brands {
-  color: white;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 2em;
-  padding: 2em;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 2em;
+    padding: 2em;
 }
 
 /*==================SECTION WORKERS================================*/
 
 .workers p {
-  font-size: 1.5em;
-  margin: auto;
-  margin-bottom: 4%;
-  width: 30%;
+    font-size: 1.5em;
+    margin: auto;
+    margin-bottom: 4%;
+    width: 30%;
 }
 
 .workers .portrait img {
-  border-radius: 50%;
+    border-radius: 50%;
 }
 
 /*================BLOG CARDS============================*/
 
 .blog h1 span {
-  margin: auto;
-  color: #8504B2;
+    margin: auto;
+    color: #8504b2;
 }
 
 .blog img {
-  width: 569px;
+    width: 569px;
 }
 
 .blog .card-footer h2 {
-  color: #8504B2;
-  padding: 1em;
+    color: #8504b2;
+    padding: 1em;
 }
 
 .blog .card-footer p {
-  color: #FFA7B3;
+    color: #ffa7b3;
 }
 
 /*===========Pricing===========================*/
 
 .pricing img {
-  float: right;
+    float: right;
 }
 
 .pricing table {
-  border-collapse: separate;
-  float: left;
-  display: inline-block;
-  margin-left: 2em;
-  border-spacing: 10em;
+    border-collapse: separate;
+    float: left;
+    display: inline-block;
+    margin-left: 2em;
+    border-spacing: 10em;
 }
 
 .pricing td {
-  text-align: left;
-  padding: 0.5em;
-  font-size: 2em;
-  padding: 1em;
+    text-align: left;
+    padding: 0.5em;
+    font-size: 2em;
+    padding: 1em;
 }
 
 .pricing td:first-of-type {
-  color: #FFA7B3;
-  font-family: "Dancing Script", cursive;
+    color: #ffa7b3;
+    font-family: "Dancing Script", cursive;
 }
 
 /*===========What they say....======================*/
 
 .whatTheySay {
-  background: url("/img/hair.jpg") 0/cover fixed;
+    background: url("/img/hair.jpg") 0 / cover fixed;
 }
 
 .whatTheySay img {
-  border-radius: 50%;
+    border-radius: 50%;
 }
 
 .whatTheySay blockquote {
-  width: 50%;
-  border-left: 10px solid #ccc;
-  margin: auto;
-  padding: 1em;
-  quotes: "\201C" "\201D" "\2018" "\2019";
-  color: white;
-  font-size: 2em;
+    width: 50%;
+    border-left: 10px solid #ccc;
+    margin: auto;
+    padding: 1em;
+    quotes: "\201C" "\201D" "\2018" "\2019";
+    color: white;
+    font-size: 2em;
 }
 
 .whatTheySay blockquote:before {
-  font-size: 2em;
-  color: #ccc;
-  content: open-quote;
-  line-height: 0.1em;
+    font-size: 2em;
+    color: #ccc;
+    content: open-quote;
+    line-height: 0.1em;
 }
 
 .whatTheySay blockquote p {
-  font-weight: 600;
-  display: inline;
+    font-weight: 600;
+    display: inline;
 }
 
 /*================Footer==========================*/
 
 .footer {
-  overflow-x: hidden;
-  background-color: #212121;
-  color: white;
+    overflow-x: hidden;
+    background-color: #212121;
+    color: white;
 }
 
 .footer img {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 .footer .grid-layout {
-  text-align: center;
-  display: grid;
-  grid-template-columns: 33% 33% 34%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 33% 33% 34%;
 }
 
 .footer .box {
-  background-color: #212121;
-  color: #fff;
-  padding: 20px;
-  font-size: 150%;
+    background-color: #212121;
+    color: #fff;
+    padding: 20px;
+    font-size: 150%;
 }
 
 /* iPads (portrait and landscape) ----------- */
 
 @media only screen and (min-width: 1025px) and (max-width: 1600px) {
-  .offer-and-pricing .left-box h1 {
-    font-size: 2em;
-  }
+    .offer-and-pricing .left-box h1 {
+        font-size: 2em;
+    }
 
-  .offer-and-pricing .left-box p {
-    font-size: 1em;
-  }
+    .offer-and-pricing .left-box p {
+        font-size: 1em;
+    }
 
-  .offer-and-pricing .left-box .promo {
-    font-size: 2em;
-  }
+    .offer-and-pricing .left-box .promo {
+        font-size: 2em;
+    }
 
-  .thegirl ul li p {
-    font-size: 1em;
-    line-height: 1;
-  }
+    .thegirl ul li p {
+        font-size: 1em;
+        line-height: 1;
+    }
 }
 
 @media only screen and (min-width: 1150px) and (max-width: 1600px) {
-  .presentation .cards .card-title h2 {
-    font-size: 1.5em;
-  }
+    .presentation .cards .card-title h2 {
+        font-size: 1.5em;
+    }
 }
 
 /* iPads (portrait and landscape) ----------- */
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  /*============header nav=======================*/
+    /*============header nav=======================*/
 
-  body {
-    line-height: 1;
-  }
+    body {
+        line-height: 1;
+    }
 
-  .logo {
-    max-width: 100px;
-    padding: 0.1em;
-  }
+    .logo {
+        max-width: 100px;
+        padding: 0.1em;
+    }
 
-  h1 {
-    font-size: 2em;
-  }
+    h1 {
+        font-size: 2em;
+    }
 
-  nav li a {
-    color: #8504B2;
-    text-decoration: none;
-    font-size: 1em;
-    font-family: "Dancing Script", cursive;
-    padding: 0;
-  }
+    nav li a {
+        color: #8504b2;
+        text-decoration: none;
+        font-size: 1em;
+        font-family: "Dancing Script", cursive;
+        padding: 0;
+    }
 
-  img {
-    max-width: 100%;
-  }
+    img {
+        max-width: 100%;
+    }
 
-  .container {
-    max-width: 1024px;
-  }
+    .container {
+        max-width: 1024px;
+    }
 
-  .container-large {
-    max-width: 1024px;
-  }
+    .container-large {
+        max-width: 1024px;
+    }
 
-  .pre-header-advertisement {
-    padding: 0.2em;
-  }
+    .pre-header-advertisement {
+        padding: 0.2em;
+    }
 
-  .pre-header-advertisement p {
-    font-size: 1em;
-  }
+    .pre-header-advertisement p {
+        font-size: 1em;
+    }
 
-  .pre-header-advertisement .float-right {
-    width: 20%;
-    margin-top: 0;
-  }
+    .pre-header-advertisement .float-right {
+        width: 20%;
+        margin-top: 0;
+    }
 
-  .pre-header-advertisement .pre-nav a {
-    color: #656D6D;
-    text-decoration: none;
-  }
+    .pre-header-advertisement .pre-nav a {
+        color: #656d6d;
+        text-decoration: none;
+    }
 
-  .pre-header-advertisement .pre-nav .icon {
-    padding: 0.5%;
-    width: 50px;
-  }
+    .pre-header-advertisement .pre-nav .icon {
+        padding: 0.5%;
+        width: 50px;
+    }
 
-  header {
-    padding: 0;
-  }
+    header {
+        padding: 0;
+    }
 
-  /*========main image and welcome thingy=================*/
+    /*========main image and welcome thingy=================*/
 
-  .container-fluid {
-    max-width: 1024px;
-  }
+    .container-fluid {
+        max-width: 1024px;
+    }
 
-  .container-fluid img {
-    width: 1024px;
-    max-width: 100%;
-  }
+    .container-fluid img {
+        width: 1024px;
+        max-width: 100%;
+    }
 
-  .container-fluid h1 {
-    font-size: 2em;
-  }
+    .container-fluid h1 {
+        font-size: 2em;
+    }
 
-  .container-fluid h1 span {
-    font-size: 1em;
-  }
+    .container-fluid h1 span {
+        font-size: 1em;
+    }
 
-  .container-fluid p {
-    margin-top: 0.5em;
-    text-transform: uppercase;
-  }
+    .container-fluid p {
+        margin-top: 0.5em;
+        text-transform: uppercase;
+    }
 
-  .container-fluid p a {
-    padding: 0;
-  }
+    .container-fluid p a {
+        padding: 0;
+    }
 
-  .container-fluid p a:hover {
-    color: white;
-    background-color: #8504B2;
-  }
+    .container-fluid p a:hover {
+        color: white;
+        background-color: #8504b2;
+    }
 
-  .presentation p {
-    font-size: 1em;
-    margin: auto;
-    max-width: 40%;
-    margin-bottom: 10px;
-  }
+    .presentation p {
+        font-size: 1em;
+        margin: auto;
+        max-width: 40%;
+        margin-bottom: 10px;
+    }
 
-  .presentation li {
-    width: 30%;
-  }
+    .presentation li {
+        width: 30%;
+    }
 
-  .presentation li .card-title {
-    padding: 1em;
-  }
+    .presentation li .card-title {
+        padding: 1em;
+    }
 
-  h2 {
-    font-size: 100%;
-  }
+    h2 {
+        font-size: 100%;
+    }
 
-  .offer-and-pricing .card-footer {
-    width: 59%;
-  }
+    .offer-and-pricing .card-footer {
+        width: 59%;
+    }
 
-  .blog .card-footer {
-    width: 74%;
-  }
+    .blog .card-footer {
+        width: 74%;
+    }
 
-  .offer-and-pricing .left-box p {
-    line-height: 1;
-    font-size: 1em;
-    font-weight: 100;
-  }
+    .offer-and-pricing .left-box p {
+        line-height: 1;
+        font-size: 1em;
+        font-weight: 100;
+    }
 
-  .offer-and-pricing .left-box h1 {
-    margin-top: 2%;
-    padding: 15px;
-  }
+    .offer-and-pricing .left-box h1 {
+        margin-top: 2%;
+        padding: 15px;
+    }
 
-  .offer-and-pricing .left-box .promo {
-    font-size: 1.5em;
-  }
+    .offer-and-pricing .left-box .promo {
+        font-size: 1.5em;
+    }
 
-  /*========thegirl=================*/
+    /*========thegirl=================*/
 
-  .thegirl ul li p {
-    line-height: 1;
-    font-size: 1em;
-    padding: 0.5em;
-    width: 90%;
-  }
+    .thegirl ul li p {
+        line-height: 1;
+        font-size: 1em;
+        padding: 0.5em;
+        width: 90%;
+    }
 
-  /*===========BRANDS=================*/
+    /*===========BRANDS=================*/
 
-  .brand .brands {
-    color: white;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 100%;
-    padding: 2em;
-  }
+    .brand .brands {
+        color: white;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 100%;
+        padding: 2em;
+    }
 
-  /*===============table pricing==========================*/
+    /*===============table pricing==========================*/
 
-  .pricing table {
-    width: 100%;
-    margin: 0;
-    text-align: center;
-    border-spacing: 1em;
-    float: none;
-    display: inline;
-    margin-left: 2em;
-  }
+    .pricing table {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        border-spacing: 1em;
+        float: none;
+        display: inline;
+        margin-left: 2em;
+    }
 
-  .pricing td {
-    padding: 0.5em;
-    font-size: 1.5em;
-    padding: 1em;
-  }
+    .pricing td {
+        padding: 0.5em;
+        font-size: 1.5em;
+        padding: 1em;
+    }
 
-  /*==============What they say==============*/
+    /*==============What they say==============*/
 
-  .whatTheySay blockquote {
-    font-size: 1em;
-    width: 100%;
-  }
+    .whatTheySay blockquote {
+        font-size: 1em;
+        width: 100%;
+    }
 
-  .footer {
-    max-width: 100%;
-    overflow-x: hidden;
-    background-color: #212121;
-    color: white;
-  }
+    .footer {
+        max-width: 100%;
+        overflow-x: hidden;
+        background-color: #212121;
+        color: white;
+    }
 
-  .footer h1 {
-    font-size: 1em;
-  }
+    .footer h1 {
+        font-size: 1em;
+    }
 
-  .footer img {
-    max-width: 50%;
-  }
+    .footer img {
+        max-width: 50%;
+    }
 
-  .footer .grid-layout {
-    text-align: left;
-    display: grid;
-    grid-template-columns: 33% 33% 34%;
-  }
+    .footer .grid-layout {
+        text-align: left;
+        display: grid;
+        grid-template-columns: 33% 33% 34%;
+    }
 
-  .footer .box {
-    background-color: #212121;
-    color: #fff;
-    padding: 20px;
-    font-size: 150%;
-  }
+    .footer .box {
+        background-color: #212121;
+        color: #fff;
+        padding: 20px;
+        font-size: 150%;
+    }
 }
 
 @media only screen and (min-device-width: 200px) and (max-device-width: 768px) {
-  body {
-    line-height: 1;
-    /*==============Presentation==============*/
-  }
+    body {
+        line-height: 1;
+        /*==============Presentation==============*/
+    }
 
-  body h1 {
-    font-size: 0.8em;
-  }
+    body h1 {
+        font-size: 0.8em;
+    }
 
-  body section h1 {
-    font-size: 2em;
-  }
+    body section h1 {
+        font-size: 2em;
+    }
 
-  body section h1 span {
-    font-size: 1em;
-  }
+    body section h1 span {
+        font-size: 1em;
+    }
 
-  body .container-fluid h1 span {
-    font-size: 1em;
-  }
+    body .container-fluid h1 span {
+        font-size: 1em;
+    }
 
-  body .pre-header-advertisement {
-    padding: 0.1em;
-  }
+    body .pre-header-advertisement {
+        padding: 0.1em;
+    }
 
-  body .pre-header-advertisement .pre-nav {
-    margin: 0;
-  }
+    body .pre-header-advertisement .pre-nav {
+        margin: 0;
+    }
 
-  body .pre-header-advertisement p {
-    font-size: 0.4em;
-    margin: 0;
-  }
+    body .pre-header-advertisement p {
+        font-size: 0.4em;
+        margin: 0;
+    }
 
-  body .pre-header-advertisement .float-right {
-    float: none;
-    margin-top: 0;
-  }
+    body .pre-header-advertisement .float-right {
+        float: none;
+        margin-top: 0;
+    }
 
-  body .pre-header-advertisement .icon {
-    padding: 0.5%;
-    width: 50px;
-  }
+    body .pre-header-advertisement .icon {
+        padding: 0.5%;
+        width: 50px;
+    }
 
-  body .logo {
-    max-width: 80px;
-  }
+    body .logo {
+        max-width: 80px;
+    }
 
-  body nav li a {
-    font-size: 1em;
-    padding: 0.2;
-  }
+    body nav li a {
+        font-size: 1em;
+        padding: 0.2;
+    }
 
-  body .container-fluid p {
-    margin-top: 0;
-  }
+    body .container-fluid p {
+        margin-top: 0;
+    }
 
-  body .container-fluid p a {
-    padding: 0;
-  }
+    body .container-fluid p a {
+        padding: 0;
+    }
 
-  body img {
-    max-width: 100%;
-  }
+    body img {
+        max-width: 100%;
+    }
 
-  body header {
-    padding: 0;
-  }
+    body header {
+        padding: 0;
+    }
 
-  body header .flex {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
+    body header .flex {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
+        flex-direction: column;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-  }
+    }
 
-  body header .flex a {
-    padding: 0.5em;
-  }
+    body header .flex a {
+        padding: 0.5em;
+    }
 
-  body .presentation .container p {
-    font-size: 1em;
-    max-width: 90%;
-  }
+    body .presentation .container p {
+        font-size: 1em;
+        max-width: 90%;
+    }
 
-  body .presentation .container ul.flex {
-    display: block;
-  }
+    body .presentation .container ul.flex {
+        display: block;
+    }
 
-  body .presentation .container ul.flex li {
-    width: 100%;
-  }
+    body .presentation .container ul.flex li {
+        width: 100%;
+    }
 
-  body .presentation .container ul.flex li .card-title {
-    font-size: 1em;
-  }
+    body .presentation .container ul.flex li .card-title {
+        font-size: 1em;
+    }
 
-  /*=================PricinAndOfferCards=======================*/
+    /*=================PricinAndOfferCards=======================*/
 
-  .offer-and-pricing .left-box {
-    float: none;
-    width: 100%;
-  }
+    .offer-and-pricing .left-box {
+        float: none;
+        width: 100%;
+    }
 
-  .offer-and-pricing .left-box p {
-    line-height: 1;
-    max-width: 90%;
-  }
+    .offer-and-pricing .left-box p {
+        line-height: 1;
+        max-width: 90%;
+    }
 
-  .offer-and-pricing .right-box .flex {
-    display: block;
-  }
+    .offer-and-pricing .right-box .flex {
+        display: block;
+    }
 
-  .offer-and-pricing .right-box .flex li {
-    width: 100%;
-  }
+    .offer-and-pricing .right-box .flex li {
+        width: 100%;
+    }
 
-  /*======================theGirl=======================*/
+    /*======================theGirl=======================*/
 
-  .thegirl .cards li {
-    float: none;
-    width: 100%;
-  }
+    .thegirl .cards li {
+        float: none;
+        width: 100%;
+    }
 
-  .thegirl .cards p {
-    margin-left: 0;
-    line-height: 1;
-    font-size: 1em;
-    margin: auto;
-  }
+    .thegirl .cards p {
+        margin-left: 0;
+        line-height: 1;
+        font-size: 1em;
+        margin: auto;
+    }
 
-  /*================Brands===================================*/
+    /*================Brands===================================*/
 
-  .brand .brands {
-    font-weight: 400;
-    font-size: 1em;
-    padding: 0.5em;
-  }
+    .brand .brands {
+        font-weight: 400;
+        font-size: 1em;
+        padding: 0.5em;
+    }
 
-  .wrapper-black .flex {
-    -ms-flex-wrap: wrap;
+    .wrapper-black .flex {
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-  }
+    }
 
-  /*==============================================================*/
+    /*==============================================================*/
 
-  .workers p {
-    font-size: 1em;
-    width: 100%;
-  }
+    .workers p {
+        font-size: 1em;
+        width: 100%;
+    }
 
-  /*==============blog-offer-and-pricing==================*/
+    /*==============blog-offer-and-pricing==================*/
 
-  .offer-and-pricing .flex {
-    display: block;
-  }
+    .offer-and-pricing .flex {
+        display: block;
+    }
 
-  .offer-and-pricing .flex li {
-    width: 100%;
-  }
+    .offer-and-pricing .flex li {
+        width: 100%;
+    }
 
-  .offer-and-pricing .flex li p {
-    font-size: 1em;
-  }
+    .offer-and-pricing .flex li p {
+        font-size: 1em;
+    }
 
-  /*=====================================================*/
+    /*=====================================================*/
 
-  .pricing table {
-    border-spacing: 1em;
-  }
+    .pricing table {
+        border-spacing: 1em;
+    }
 
-  .pricing table td {
-    padding: 10px;
-    font-size: 1em;
-  }
+    .pricing table td {
+        padding: 10px;
+        font-size: 1em;
+    }
 
-  .pricing img {
-    float: none;
-  }
+    .pricing img {
+        float: none;
+    }
 
-  /*==================what they say========================*/
+    /*==================what they say========================*/
 
-  .whatTheySay blockquote {
-    font-size: 1em;
-    width: 100%;
-  }
+    .whatTheySay blockquote {
+        font-size: 1em;
+        width: 100%;
+    }
 
-  /*====================footer=================================*/
+    /*====================footer=================================*/
 
-  .footer .grid-layout {
-    display: block;
-  }
+    .footer .grid-layout {
+        display: block;
+    }
 
-  .footer .two p {
-    line-height: 1;
-    font-size: 100%;
-  }
+    .footer .two p {
+        line-height: 1;
+        font-size: 100%;
+    }
 }
 
 @media only screen and (min-device-width: 500px) and (max-device-width: 768px) {
-  body nav li a {
-    font-size: 1em;
-  }
+    body nav li a {
+        font-size: 1em;
+    }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1100px) {
-  .pricing img {
-    max-width: 80%;
-  }
+    .pricing img {
+        max-width: 80%;
+    }
 
-  .pricing table {
-    border-spacing: 3em;
-  }
+    .pricing table {
+        border-spacing: 3em;
+    }
 
-  .pricing table td {
-    font-size: 1em;
-    padding: 0;
-  }
+    .pricing table td {
+        font-size: 1em;
+        padding: 0;
+    }
 
-  .pre-header-advertisement .pre-nav {
-    margin-left: 2%;
-  }
+    .pre-header-advertisement .pre-nav {
+        margin-left: 2%;
+    }
 
-  .pre-header-advertisement .pre-nav a {
-    margin-left: 0;
-  }
+    .pre-header-advertisement .pre-nav a {
+        margin-left: 0;
+    }
 
-  .pre-header-advertisement .float-right {
-    float: none;
-  }
+    .pre-header-advertisement .float-right {
+        float: none;
+    }
 }
 
 @media only screen and (min-device-width: 1100px) and (max-device-width: 1260px) {
-  .pricing table {
-    border-spacing: 3em;
-  }
+    .pricing table {
+        border-spacing: 3em;
+    }
 
-  .pricing table td {
-    font-size: 1.5em;
-    padding: 0;
-  }
+    .pricing table td {
+        font-size: 1.5em;
+        padding: 0;
+    }
 }
 
 @media only screen and (min-device-width: 1260px) and (max-device-width: 1760px) {
-  .pricing table {
-    border-spacing: 5em;
-  }
+    .pricing table {
+        border-spacing: 5em;
+    }
 
-  .pricing table td {
-    font-size: 2em;
-    padding: 0;
-  }
+    .pricing table td {
+        font-size: 2em;
+        padding: 0;
+    }
 }
-
